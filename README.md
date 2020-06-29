@@ -1,7 +1,7 @@
-![unsplash.jpg](/images/unsplash.jpg)
-
 # Customer Predictive Analysis
 Customer analytics is a process by which data from customer behavior is used to help make key business decisions via market segmentation and predictive analytics. This information is used by businesses for direct marketing, site selection, and customer relationship management. Marketing provides services in order to satisfy customers. With that in mind, the productive system is considered from its beginning at the production level, to the end of the cycle at the consumer. Customer analytics plays an important role in the prediction of customer behavior.
+
+![unsplash.jpg](/images/unsplash.jpg)
 
 ## Retail
 Although until recently over 90% of retailers had limited visibility on their customers, with increasing investments in loyalty programs, customer tracking solutions and market research, this industry started increasing use of customer analytics in decisions ranging from product, promotion, price and distribution management.[citation needed] The most obvious use of customer analytics in retail today is the development of personalized communications and offers and/or different marketing programs by segment.[citation needed] Additional reasons set forth by Bain & Co. include: prioritizing product development efforts, designing distribution strategies and determining product pricing.[3] Demographic, lifestyle, preference, loyalty data, behavior, shopper value and predictive behavior data points are key to the success of customer analytics.
