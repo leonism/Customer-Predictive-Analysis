@@ -1,0 +1,116 @@
+[
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 6, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 315, 
+        "test_score": 0.6735499103036103, 
+        "fit_time": 14830, 
+        "num_samples": 1711, 
+        "best_iteration": null, 
+        "train_score": 0.7275859374254033, 
+        "parameter_id": 0, 
+        "time": 15145, 
+        "done_at": 1593448485295, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 6, \"min_samples_leaf\": 7}@0"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 14, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 504, 
+        "test_score": 0.6858816884327068, 
+        "fit_time": 17467, 
+        "num_samples": 1711, 
+        "best_iteration": null, 
+        "train_score": 0.799633687142796, 
+        "parameter_id": 1, 
+        "time": 17971, 
+        "done_at": 1593448487754, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 14, \"min_samples_leaf\": 7}@0"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 14, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 484, 
+        "test_score": 0.6848435473234886, 
+        "fit_time": 17379, 
+        "num_samples": 1711, 
+        "best_iteration": null, 
+        "train_score": 0.796998352484324, 
+        "parameter_id": 1, 
+        "time": 17863, 
+        "done_at": 1593448487944, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 14, \"min_samples_leaf\": 7}@1"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 14, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 394, 
+        "test_score": 0.6883093180216153, 
+        "fit_time": 17204, 
+        "num_samples": 1711, 
+        "best_iteration": null, 
+        "train_score": 0.7986591607207608, 
+        "parameter_id": 1, 
+        "time": 17598, 
+        "done_at": 1593448487722, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 14, \"min_samples_leaf\": 7}@2"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 6, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 174, 
+        "test_score": 0.6819273321096959, 
+        "fit_time": 5877, 
+        "num_samples": 1711, 
+        "best_iteration": null, 
+        "train_score": 0.7314841452132412, 
+        "parameter_id": 0, 
+        "time": 6051, 
+        "done_at": 1593448491358, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 6, \"min_samples_leaf\": 7}@1"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 6, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 141, 
+        "test_score": 0.6762858732473391, 
+        "fit_time": 4346, 
+        "num_samples": 1711, 
+        "best_iteration": null, 
+        "train_score": 0.7351849365409207, 
+        "parameter_id": 0, 
+        "time": 4487, 
+        "done_at": 1593448492218, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 6, \"min_samples_leaf\": 7}@2"
+    }
+]

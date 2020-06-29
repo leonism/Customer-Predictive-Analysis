@@ -1,0 +1,88 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL"
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "Customer Lifetime Value"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Number of Open Complaints": 203,
+    "Policy": 100,
+    "Total Claim Amount": 150,
+    "Location Code": 113,
+    "Customer": 106,
+    "Income": 100,
+    "Monthly Premium Auto": 165,
+    "Customer Lifetime Value": 188,
+    "Sales Channel": 113,
+    "EmploymentStatus": 135,
+    "Number of Policies": 150,
+    "Coverage": 106,
+    "Gender": 100,
+    "Marital Status": 120,
+    "Vehicle Class": 141,
+    "Response": 100,
+    "Policy Type": 127,
+    "Renew Offer Type": 135,
+    "Education": 155,
+    "Months Since Policy Inception": 233,
+    "State": 100,
+    "Months Since Last Claim": 188,
+    "Vehicle Size": 105,
+    "Effective To Date_parsed": 218
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "num_values": [
+        3505323103.4094462, 
+        92.95886768845793, 
+        430.3417782649336, 
+        2.960118861432593, 
+        0.38974038160775726, 
+        15.120425398811385, 
+        37989.521895527054, 
+        0.13934939005317484, 
+        48.403659680950895
+    ], 
+    "cat_values": [], 
+    "cat_columns": [], 
+    "num_columns": [
+        "Effective To Date_parsed", 
+        "Monthly Premium Auto", 
+        "Total Claim Amount", 
+        "Number of Policies", 
+        "Number of Open Complaints", 
+        "Months Since Last Claim", 
+        "Income", 
+        "Response", 
+        "Months Since Policy Inception"
+    ]
+}

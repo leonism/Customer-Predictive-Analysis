@@ -1,0 +1,116 @@
+[
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 6, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 153, 
+        "test_score": 0.6763192592751722, 
+        "fit_time": 4961, 
+        "num_samples": 2132, 
+        "best_iteration": null, 
+        "train_score": 0.727586210881938, 
+        "parameter_id": 0, 
+        "time": 5114, 
+        "done_at": 1593448412890, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 6, \"min_samples_leaf\": 7}@0"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 14, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 215, 
+        "test_score": 0.6928989312663134, 
+        "fit_time": 6224, 
+        "num_samples": 2132, 
+        "best_iteration": null, 
+        "train_score": 0.7983163043052218, 
+        "parameter_id": 1, 
+        "time": 6439, 
+        "done_at": 1593448414029, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 14, \"min_samples_leaf\": 7}@0"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 14, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 287, 
+        "test_score": 0.6888614364689079, 
+        "fit_time": 6160, 
+        "num_samples": 2131, 
+        "best_iteration": null, 
+        "train_score": 0.8024777106121178, 
+        "parameter_id": 1, 
+        "time": 6447, 
+        "done_at": 1593448414151, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 14, \"min_samples_leaf\": 7}@1"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 14, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 491, 
+        "test_score": 0.6884830966418378, 
+        "fit_time": 6278, 
+        "num_samples": 2131, 
+        "best_iteration": null, 
+        "train_score": 0.8058412705698721, 
+        "parameter_id": 1, 
+        "time": 6769, 
+        "done_at": 1593448414502, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 14, \"min_samples_leaf\": 7}@2"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 6, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 101, 
+        "test_score": 0.674739852231755, 
+        "fit_time": 3268, 
+        "num_samples": 2131, 
+        "best_iteration": null, 
+        "train_score": 0.7289227047779421, 
+        "parameter_id": 0, 
+        "time": 3369, 
+        "done_at": 1593448416267, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 6, \"min_samples_leaf\": 7}@1"
+    }, 
+    {
+        "parameters": {
+            "max_features": "auto", 
+            "n_estimators": 100, 
+            "min_samples_split": 21, 
+            "max_depth": 6, 
+            "min_samples_leaf": 7
+        }, 
+        "score_time": 70, 
+        "test_score": 0.6790675849867784, 
+        "fit_time": 2616, 
+        "num_samples": 2131, 
+        "best_iteration": null, 
+        "train_score": 0.7322958847222113, 
+        "parameter_id": 0, 
+        "time": 2686, 
+        "done_at": 1593448416724, 
+        "grid_point_id": "{\"max_features\": \"auto\", \"n_estimators\": 100, \"min_samples_split\": 21, \"max_depth\": 6, \"min_samples_leaf\": 7}@2"
+    }
+]

@@ -1,0 +1,292 @@
+{
+    "per_feature": {
+        "Effective To Date_parsed": {
+            "stats": {
+                "std": 1464979.7643300423, 
+                "p99": 3507840000.0, 
+                "min": 3502828800.0, 
+                "max": 3507840000.0, 
+                "average": 3505328996.8439507, 
+                "median": 3505334400.0
+            }, 
+            "missing_impute_with_value": 3505328996.8439507
+        }, 
+        "Vehicle Size": {
+            "stats": {
+                "mostFrequentValue": "Medsize", 
+                "leastFrequentValue": "Large"
+            }, 
+            "category_possible_counts": [
+                3627, 
+                982, 
+                524
+            ], 
+            "category_possible_values": [
+                "Medsize", 
+                "Small", 
+                "Large"
+            ]
+        }, 
+        "Monthly Premium Auto": {
+            "stats": {
+                "std": 34.27027274573441, 
+                "p99": 222.6800000000003, 
+                "min": 61.0, 
+                "max": 298.0, 
+                "average": 93.14533411260471, 
+                "median": 83.0
+            }, 
+            "missing_impute_with_value": 93.14533411260471
+        }, 
+        "State": {
+            "stats": {}
+        }, 
+        "Income": {
+            "stats": {
+                "std": 30528.269289694403, 
+                "p99": 98115.44, 
+                "min": 0.0, 
+                "max": 99981.0, 
+                "average": 38164.571011104614, 
+                "median": 34516.0
+            }, 
+            "missing_impute_with_value": 38164.571011104614
+        }, 
+        "Policy": {
+            "stats": {}
+        }, 
+        "Customer Lifetime Value": {
+            "stats": {}
+        }, 
+        "Vehicle Class": {
+            "stats": {
+                "mostFrequentValue": "Four-Door Car", 
+                "leastFrequentValue": "Luxury Car"
+            }, 
+            "category_possible_counts": [
+                2598, 
+                1058, 
+                1010, 
+                270, 
+                99, 
+                98
+            ], 
+            "category_possible_values": [
+                "Four-Door Car", 
+                "Two-Door Car", 
+                "SUV", 
+                "Sports Car", 
+                "Luxury SUV", 
+                "Luxury Car"
+            ]
+        }, 
+        "Number of Policies": {
+            "stats": {
+                "std": 2.3869192336123657, 
+                "p99": 9.0, 
+                "min": 1.0, 
+                "max": 9.0, 
+                "average": 2.9604519774011298, 
+                "median": 2.0
+            }, 
+            "missing_impute_with_value": 2.9604519774011298
+        }, 
+        "Total Claim Amount": {
+            "stats": {
+                "std": 294.449778198338, 
+                "p99": 1412.287624240003, 
+                "min": 0.099007, 
+                "max": 2893.239678, 
+                "average": 431.74213203545713, 
+                "median": 379.37884
+            }, 
+            "missing_impute_with_value": 431.74213203545713
+        }, 
+        "Policy Type": {
+            "stats": {}
+        }, 
+        "Coverage": {
+            "stats": {}
+        }, 
+        "Response": {
+            "stats": {
+                "std": 0.34628758424655226, 
+                "p99": 1.0, 
+                "min": 0.0, 
+                "max": 1.0, 
+                "average": 0.13929475939996103, 
+                "median": 0.0
+            }, 
+            "missing_impute_with_value": 0.13929475939996103
+        }, 
+        "Customer": {
+            "stats": {}
+        }, 
+        "Gender": {
+            "stats": {
+                "mostFrequentValue": "F", 
+                "leastFrequentValue": "M"
+            }, 
+            "category_possible_counts": [
+                2591, 
+                2542
+            ], 
+            "category_possible_values": [
+                "F", 
+                "M"
+            ]
+        }, 
+        "Renew Offer Type": {
+            "stats": {}
+        }, 
+        "EmploymentStatus": {
+            "stats": {
+                "mostFrequentValue": "Employed", 
+                "leastFrequentValue": "Retired"
+            }, 
+            "category_possible_counts": [
+                3249, 
+                1286, 
+                226, 
+                213, 
+                159
+            ], 
+            "category_possible_values": [
+                "Employed", 
+                "Unemployed", 
+                "Disabled", 
+                "Medical Leave", 
+                "Retired"
+            ]
+        }, 
+        "Sales Channel": {
+            "stats": {
+                "mostFrequentValue": "Agent", 
+                "leastFrequentValue": "Web"
+            }, 
+            "category_possible_counts": [
+                2011, 
+                1445, 
+                958, 
+                719
+            ], 
+            "category_possible_values": [
+                "Agent", 
+                "Branch", 
+                "Call Center", 
+                "Web"
+            ]
+        }, 
+        "Months Since Last Claim": {
+            "stats": {
+                "std": 10.05756987121557, 
+                "p99": 35.0, 
+                "min": 0.0, 
+                "max": 35.0, 
+                "average": 15.105396454315215, 
+                "median": 14.0
+            }, 
+            "missing_impute_with_value": 15.105396454315215
+        }, 
+        "Number of Open Complaints": {
+            "stats": {
+                "std": 0.9139916536029473, 
+                "p99": 4.0, 
+                "min": 0.0, 
+                "max": 5.0, 
+                "average": 0.38827196571205924, 
+                "median": 0.0
+            }, 
+            "missing_impute_with_value": 0.38827196571205924
+        }, 
+        "Marital Status": {
+            "stats": {
+                "mostFrequentValue": "Married", 
+                "leastFrequentValue": "Divorced"
+            }, 
+            "category_possible_counts": [
+                2969, 
+                1377, 
+                787
+            ], 
+            "category_possible_values": [
+                "Married", 
+                "Single", 
+                "Divorced"
+            ]
+        }, 
+        "Location Code": {
+            "stats": {
+                "mostFrequentValue": "Suburban", 
+                "leastFrequentValue": "Urban"
+            }, 
+            "category_possible_counts": [
+                3199, 
+                1027, 
+                907
+            ], 
+            "category_possible_values": [
+                "Suburban", 
+                "Rural", 
+                "Urban"
+            ]
+        }, 
+        "Education": {
+            "stats": {
+                "mostFrequentValue": "Bachelor", 
+                "leastFrequentValue": "Doctor"
+            }, 
+            "category_possible_counts": [
+                1536, 
+                1517, 
+                1482, 
+                398, 
+                200
+            ], 
+            "category_possible_values": [
+                "Bachelor", 
+                "College", 
+                "High School or Below", 
+                "Master", 
+                "Doctor"
+            ]
+        }, 
+        "Months Since Policy Inception": {
+            "stats": {
+                "std": 28.033541168654676, 
+                "p99": 98.0, 
+                "min": 0.0, 
+                "max": 99.0, 
+                "average": 48.57646600428599, 
+                "median": 48.0
+            }, 
+            "missing_impute_with_value": 48.57646600428599
+        }
+    }, 
+    "feature_order": [
+        "Effective To Date_parsed", 
+        "Vehicle Size", 
+        "Monthly Premium Auto", 
+        "State", 
+        "Income", 
+        "Policy", 
+        "Customer Lifetime Value", 
+        "Vehicle Class", 
+        "Total Claim Amount", 
+        "Policy Type", 
+        "Coverage", 
+        "Response", 
+        "Customer", 
+        "Gender", 
+        "Months Since Last Claim", 
+        "Renew Offer Type", 
+        "EmploymentStatus", 
+        "Sales Channel", 
+        "Number of Policies", 
+        "Number of Open Complaints", 
+        "Marital Status", 
+        "Location Code", 
+        "Education", 
+        "Months Since Policy Inception"
+    ]
+}

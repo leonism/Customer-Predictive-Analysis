@@ -1,0 +1,165 @@
+{
+  "params": {
+    "ttPolicy": "EXPLICIT_FILTERING_TWO_DATASETS",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "eftdTrain": {
+      "datasetSmartName": "train",
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
+    "eftdTest": {
+      "datasetSmartName": "test",
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "filter": {
+        "distinct": false,
+        "enabled": false,
+        "uiData": {
+          "mode": "\u0026\u0026",
+          "conditions": [
+            {
+              "input": "Customer",
+              "operator": "contains",
+              "col": "State",
+              "num": 0.0
+            }
+          ]
+        }
+      }
+    },
+    "efsdTrain": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
+    "efsdTest": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      }
+    },
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 3,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1593448396030,
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"Customer","type":"string"},
+      {"name":"State","type":"string"},
+      {"name":"Customer Lifetime Value","type":"double"},
+      {"name":"Response","type":"bigint"},
+      {"name":"Coverage","type":"string"},
+      {"name":"Education","type":"string"},
+      {"name":"Effective To Date_parsed","type":"date"},
+      {"name":"EmploymentStatus","type":"string"},
+      {"name":"Gender","type":"string"},
+      {"name":"Income","type":"bigint"},
+      {"name":"Location Code","type":"string"},
+      {"name":"Marital Status","type":"string"},
+      {"name":"Monthly Premium Auto","type":"bigint"},
+      {"name":"Months Since Last Claim","type":"bigint"},
+      {"name":"Months Since Policy Inception","type":"bigint"},
+      {"name":"Number of Open Complaints","type":"bigint"},
+      {"name":"Number of Policies","type":"bigint"},
+      {"name":"Policy Type","type":"string"},
+      {"name":"Policy","type":"string"},
+      {"name":"Renew Offer Type","type":"string"},
+      {"name":"Sales Channel","type":"string"},
+      {"name":"Total Claim Amount","type":"double"},
+      {"name":"Vehicle Class","type":"string"},
+      {"name":"Vehicle Size","type":"string"}
+    ],
+    "userModified": false
+  },
+  "trainPath": "train.csv.gz",
+  "testPath": "test.csv.gz",
+  "trainRows": 6394,
+  "testRows": 2740,
+  "fullRows": 0
+}

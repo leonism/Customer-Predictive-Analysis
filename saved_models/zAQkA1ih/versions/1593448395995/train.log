@@ -1,0 +1,1486 @@
+[2020/06/29-23:33:15.291] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - ----------------------------------------
+[2020/06/29-23:33:15.291] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - DSS startup: jek version:7.0.1
+[2020/06/29-23:33:15.291] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - DSS home: /Volumes/DATA/dss_home
+[2020/06/29-23:33:15.291] [ActivityExecutor-31] [INFO] [dku] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - OS: Mac OS X 10.14.6 x86_64 - Java: AdoptOpenJDK 1.8.0_252
+[2020/06/29-23:33:15.290] [ActivityExecutor-31] [INFO] [dku.flow.jobrunner] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Allocated a slot for this activity!
+[2020/06/29-23:33:15.294] [ActivityExecutor-31] [INFO] [dku.flow.jobrunner] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Run activity
+[2020/06/29-23:33:15.353] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Executing default pre-activity lifecycle hook
+[2020/06/29-23:33:15.420] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Checking if sources are ready
+[2020/06/29-23:33:15.457] [ActivityExecutor-31] [DEBUG] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Readiness cache miss for dataset__admin__CUSTOMERPREDICTIVEANALYTICS.test__NP
+[2020/06/29-23:33:15.506] [ActivityExecutor-31] [INFO] [dku.datasets.file] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"CUSTOMERPREDICTIVEANALYTICS/test","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/06/29-23:33:15.511] [ActivityExecutor-31] [INFO] [dku.datasets.ftplike] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating Filesystem dataset prefix=
+[2020/06/29-23:33:15.607] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating local filesystem prefix=/
+[2020/06/29-23:33:15.610] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumeration done nb_paths=1 size=94625
+[2020/06/29-23:33:15.618] [ActivityExecutor-31] [INFO] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Caching readiness for dataset__admin__CUSTOMERPREDICTIVEANALYTICS.test__NP s=READY h=/4fOZmOfEBJpM5FQZtHc7Q
+[2020/06/29-23:33:15.622] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Checked source readiness CUSTOMERPREDICTIVEANALYTICS.test -> true
+[2020/06/29-23:33:15.637] [ActivityExecutor-31] [DEBUG] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Readiness cache miss for dataset__admin__CUSTOMERPREDICTIVEANALYTICS.train__NP
+[2020/06/29-23:33:15.640] [ActivityExecutor-31] [INFO] [dku.datasets.file] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"CUSTOMERPREDICTIVEANALYTICS/train","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/06/29-23:33:15.641] [ActivityExecutor-31] [INFO] [dku.datasets.ftplike] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating Filesystem dataset prefix=
+[2020/06/29-23:33:15.645] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating local filesystem prefix=/
+[2020/06/29-23:33:15.646] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumeration done nb_paths=1 size=219997
+[2020/06/29-23:33:15.649] [ActivityExecutor-31] [INFO] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Caching readiness for dataset__admin__CUSTOMERPREDICTIVEANALYTICS.train__NP s=READY h=IhLQ52kyWeDnDLGwi2pXxg
+[2020/06/29-23:33:15.650] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Checked source readiness CUSTOMERPREDICTIVEANALYTICS.train -> true
+[2020/06/29-23:33:15.652] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Computing hashes to propagate BEFORE activity
+[2020/06/29-23:33:15.661] [ActivityExecutor-31] [DEBUG] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Readiness cache miss for dataset__admin__CUSTOMERPREDICTIVEANALYTICS.test__NP
+[2020/06/29-23:33:15.663] [ActivityExecutor-31] [INFO] [dku.datasets.file] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"CUSTOMERPREDICTIVEANALYTICS/test","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/06/29-23:33:15.664] [ActivityExecutor-31] [INFO] [dku.datasets.ftplike] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating Filesystem dataset prefix=
+[2020/06/29-23:33:15.668] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating local filesystem prefix=/
+[2020/06/29-23:33:15.673] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumeration done nb_paths=1 size=94625
+[2020/06/29-23:33:15.698] [ActivityExecutor-31] [INFO] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Caching readiness for dataset__admin__CUSTOMERPREDICTIVEANALYTICS.test__NP s=READY h=/4fOZmOfEBJpM5FQZtHc7Q
+[2020/06/29-23:33:15.705] [ActivityExecutor-31] [DEBUG] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Readiness cache miss for dataset__admin__CUSTOMERPREDICTIVEANALYTICS.train__NP
+[2020/06/29-23:33:15.708] [ActivityExecutor-31] [INFO] [dku.datasets.file] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"CUSTOMERPREDICTIVEANALYTICS/train","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/06/29-23:33:15.710] [ActivityExecutor-31] [INFO] [dku.datasets.ftplike] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating Filesystem dataset prefix=
+[2020/06/29-23:33:15.714] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating local filesystem prefix=/
+[2020/06/29-23:33:15.716] [ActivityExecutor-31] [DEBUG] [dku.fs.local] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumeration done nb_paths=1 size=219997
+[2020/06/29-23:33:15.719] [ActivityExecutor-31] [INFO] [dku.dataset.hash] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Caching readiness for dataset__admin__CUSTOMERPREDICTIVEANALYTICS.train__NP s=READY h=IhLQ52kyWeDnDLGwi2pXxg
+[2020/06/29-23:33:15.721] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Recorded 2 hashes before activity run
+[2020/06/29-23:33:15.724] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Building recipe runner of type
+[2020/06/29-23:33:15.979] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Recipe runner built, will use 1 thread(s)
+[2020/06/29-23:33:15.983] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Starting execution thread: com.dataiku.dip.analysis.ml.prediction.flow.PredictionTrainingRecipeRunner@24e254b5
+[2020/06/29-23:33:15.987] [ActivityExecutor-31] [DEBUG] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Execution threads started, waiting for activity end
+[2020/06/29-23:33:15.992] [FRT-36-FlowRunnable] [INFO] [dku.flow.activity] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Run thread for activity train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP starting
+[2020/06/29-23:33:16.133] [FRT-36-FlowRunnable] [INFO] [dku.datasets.file] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"CUSTOMERPREDICTIVEANALYTICS/train","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/06/29-23:33:16.154] [FRT-36-FlowRunnable] [INFO] [dku.datasets.ftplike] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating Filesystem dataset prefix=
+[2020/06/29-23:33:16.161] [FRT-36-FlowRunnable] [DEBUG] [dku.fs.local] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating local filesystem prefix=/
+[2020/06/29-23:33:16.163] [FRT-36-FlowRunnable] [DEBUG] [dku.fs.local] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumeration done nb_paths=1 size=219997
+[2020/06/29-23:33:16.165] [FRT-36-FlowRunnable] [INFO] [dku.input.push] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - USTP: push selection.method=FULL records=100000 ratio=0.02 col=null
+[2020/06/29-23:33:16.189] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Extractor run: limit={"maxBytes":-1,"maxRecords":-1,"ordering":{"enabled":false,"rules":[]}} totalRecords=0
+[2020/06/29-23:33:16.220] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - getCompression filename=**out-s0.csv.gz**
+[2020/06/29-23:33:16.224] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - getCompression filename=**out-s0.csv.gz**
+[2020/06/29-23:33:16.225] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Start compressed [GZIP] stream: /Volumes/DATA/dss_home/managed_datasets/CUSTOMERPREDICTIVEANALYTICS/train/out-s0.csv.gz / totalRecsBefore=0
+[2020/06/29-23:33:16.229] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - getCompression filename=**out-s0.csv.gz**
+[2020/06/29-23:33:16.230] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - getCompression filename=**out-s0.csv.gz**
+[2020/06/29-23:33:17.641] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - after stream totalComp=219997 totalUncomp=1175239 totalRec=6394
+[2020/06/29-23:33:17.642] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Extractor run done, totalCompressed=219997 totalRecords=6394
+[2020/06/29-23:33:17.655] [FRT-36-FlowRunnable] [INFO] [dku.datasets.file] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"CUSTOMERPREDICTIVEANALYTICS/test","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/06/29-23:33:17.661] [FRT-36-FlowRunnable] [INFO] [dku.datasets.ftplike] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating Filesystem dataset prefix=
+[2020/06/29-23:33:17.670] [FRT-36-FlowRunnable] [DEBUG] [dku.fs.local] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumerating local filesystem prefix=/
+[2020/06/29-23:33:17.672] [FRT-36-FlowRunnable] [DEBUG] [dku.fs.local] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Enumeration done nb_paths=1 size=94625
+[2020/06/29-23:33:17.675] [FRT-36-FlowRunnable] [INFO] [dku.input.push] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - USTP: push selection.method=FULL records=100000 ratio=0.02 col=null
+[2020/06/29-23:33:17.681] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Extractor run: limit={"maxBytes":-1,"maxRecords":-1,"ordering":{"enabled":false,"rules":[]}} totalRecords=0
+[2020/06/29-23:33:17.682] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - getCompression filename=**out-s0.csv.gz**
+[2020/06/29-23:33:17.686] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - getCompression filename=**out-s0.csv.gz**
+[2020/06/29-23:33:17.688] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Start compressed [GZIP] stream: /Volumes/DATA/dss_home/managed_datasets/CUSTOMERPREDICTIVEANALYTICS/test/out-s0.csv.gz / totalRecsBefore=0
+[2020/06/29-23:33:17.703] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - getCompression filename=**out-s0.csv.gz**
+[2020/06/29-23:33:17.710] [FRT-36-FlowRunnable] [INFO] [dku] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - getCompression filename=**out-s0.csv.gz**
+[2020/06/29-23:33:18.333] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - after stream totalComp=94625 totalUncomp=503229 totalRec=2740
+[2020/06/29-23:33:18.334] [FRT-36-FlowRunnable] [INFO] [dku.format] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Extractor run done, totalCompressed=94625 totalRecords=2740
+[2020/06/29-23:33:18.420] [FRT-36-FlowRunnable] [INFO] [dku.recipes.prediction.train] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Read modeling: 
+ {
+  "algorithm": "RANDOM_FOREST_REGRESSION",
+  "rf_regressor_grid": {
+    "enabled": true,
+    "n_estimators": {
+      "values": [
+        100
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "n_jobs": 1,
+    "max_tree_depth": {
+      "values": [
+        6,
+        14
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "min_samples_leaf": {
+      "values": [
+        7
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "selection_mode": "auto",
+    "max_features": {
+      "values": [
+        5
+      ],
+      "nValues": 0,
+      "gridMode": "EXPLICIT"
+    },
+    "max_feature_prop": 0.3
+  },
+  "max_ensemble_nodes_serialized": 6000,
+  "metrics": {
+    "evaluationMetric": "R2",
+    "customEvaluationMetricGIB": true,
+    "customEvaluationMetricNeedsProba": false,
+    "costMatrixWeights": {
+      "tpGain": 1.0,
+      "tnGain": 0.0,
+      "fpGain": -0.3,
+      "fnGain": 0.0
+    },
+    "liftPoint": 0.4
+  },
+  "autoOptimizeThreshold": true,
+  "forcedClassifierThreshold": 0.0,
+  "gridLength": 2,
+  "grid_search_params": {
+    "mode": "KFOLD",
+    "splitRatio": 0.8,
+    "shuffleIterations": 1,
+    "nFolds": 3,
+    "stratified": true,
+    "strategy": "GRID",
+    "randomized": true,
+    "nIter": 0,
+    "timeout": 0,
+    "nJobs": 4
+  },
+  "pluginAlgoCustomGridSearch": false,
+  "computeLearningCurves": false,
+  "skipExpensiveReports": false
+}
+[2020/06/29-23:33:18.545] [FRT-36-FlowRunnable] [INFO] [dku.recipes.prediction.train] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Run training in code env built-in (set at deploy-time)
+[2020/06/29-23:33:18.562] [FRT-36-FlowRunnable] [INFO] [dku.datasets.file] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"CUSTOMERPREDICTIVEANALYTICS/test","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/06/29-23:33:18.565] [FRT-36-FlowRunnable] [INFO] [dku.datasets.file] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Building Filesystem handler config: {"connection":"filesystem_managed","path":"CUSTOMERPREDICTIVEANALYTICS/train","notReadyIfEmpty":false,"filesSelectionRules":{"mode":"ALL","excludeRules":[],"includeRules":[],"explicitFiles":[]}}
+[2020/06/29-23:33:18.624] [FRT-36-FlowRunnable] [WARN] [dku.code.projectLibs] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - External libraries file not found: /Volumes/DATA/dss_home/jobs/CUSTOMERPREDICTIVEANALYTICS/Build_Prediction__RANDOM_FOREST_REGRESSION__on_train_2020-06-29T16-33-11.680/localconfig/projects/CUSTOMERPREDICTIVEANALYTICS/lib/external-libraries.json
+[2020/06/29-23:33:18.629] [FRT-36-FlowRunnable] [INFO] [dku.code.projectLibs] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - EXTERNAL LIBS FROM CUSTOMERPREDICTIVEANALYTICS is {"gitReferences":{},"pythonPath":["python"],"rsrcPath":["R"],"importLibrariesFromProjects":[]}
+[2020/06/29-23:33:18.632] [FRT-36-FlowRunnable] [INFO] [dku.code.projectLibs] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - chunkFolder is /Volumes/DATA/dss_home/jobs/CUSTOMERPREDICTIVEANALYTICS/Build_Prediction__RANDOM_FOREST_REGRESSION__on_train_2020-06-29T16-33-11.680/localconfig/projects/CUSTOMERPREDICTIVEANALYTICS/lib/R
+[2020/06/29-23:33:18.635] [FRT-36-FlowRunnable] [INFO] [xxx] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - RSRC PATH: ["/Volumes/DATA/dss_home/jobs/CUSTOMERPREDICTIVEANALYTICS/Build_Prediction__RANDOM_FOREST_REGRESSION__on_train_2020-06-29T16-33-11.680/localconfig/projects/CUSTOMERPREDICTIVEANALYTICS/lib/R"]
+[2020/06/29-23:33:18.637] [FRT-36-FlowRunnable] [INFO] [dku.recipes.code.base] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Writing dku-exec-env for local execution in /Volumes/DATA/dss_home/jobs/CUSTOMERPREDICTIVEANALYTICS/Build_Prediction__RANDOM_FOREST_REGRESSION__on_train_2020-06-29T16-33-11.680/train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP/prediction-train-recipe/pyrunfKAUuj6T7Vf7/remote-run-env-def.json
+[2020/06/29-23:33:18.664] [FRT-36-FlowRunnable] [INFO] [dku.code.envs.resolution] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Executing Python activity in builtin env
+[2020/06/29-23:33:18.665] [FRT-36-FlowRunnable] [INFO] [dku.flow.abstract.python] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Execute activity command: ["/Volumes/DATA/dss_home/bin/python","-u","-m","dataiku.doctor.prediction.reg_train_recipe","/Volumes/DATA/dss_home/saved_models/CUSTOMERPREDICTIVEANALYTICS/zAQkA1ih/versions/1593448395995","/Volumes/DATA/dss_home/saved_models/CUSTOMERPREDICTIVEANALYTICS/zAQkA1ih/core/selection","TRAIN_SPLITTED_ONLY"]
+[2020/06/29-23:33:18.666] [FRT-36-FlowRunnable] [INFO] [dku.recipes.code.base] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Run command insecurely, from user gerryleonugroho
+[2020/06/29-23:33:18.678] [FRT-36-FlowRunnable] [INFO] [dku.security.process] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Starting process (regular)
+[2020/06/29-23:33:18.691] [FRT-36-FlowRunnable] [INFO] [dku.security.process] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Process started with pid=36198
+[2020/06/29-23:33:18.708] [FRT-36-FlowRunnable] [INFO] [dku.processes.cgroups] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Will use cgroups []
+[2020/06/29-23:33:18.709] [FRT-36-FlowRunnable] [INFO] [dku.processes.cgroups] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Applying rules to used cgroups: []
+[2020/06/29-23:33:18.731] [FRT-36-FlowRunnable] [INFO] [dku.recipes.code.base] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Process reads from nothing
+[2020/06/29-23:33:26.656] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,656 INFO START -  Loading train set
+[2020/06/29-23:33:26.660] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,656 INFO Reading with dtypes: None
+[2020/06/29-23:33:26.660] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for Customer: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.662] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for State: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.663] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for Customer Lifetime Value: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=TARGET)
+[2020/06/29-23:33:26.664] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for Response: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.665] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for Coverage: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.666] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for Education: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.669] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for Effective To Date_parsed: None (schema_type=date feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.670] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for EmploymentStatus: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.670] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for Gender: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.671] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for Income: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.676] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for Location Code: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.679] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for Marital Status: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.680] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,657 INFO Computed dtype for Monthly Premium Auto: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.682] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Computed dtype for Months Since Last Claim: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.683] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Computed dtype for Months Since Policy Inception: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.683] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Computed dtype for Number of Open Complaints: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.684] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Computed dtype for Number of Policies: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.685] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Computed dtype for Policy Type: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.686] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Computed dtype for Policy: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.689] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Computed dtype for Renew Offer Type: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.691] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Computed dtype for Sales Channel: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.692] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Computed dtype for Total Claim Amount: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.696] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Computed dtype for Vehicle Class: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.699] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Computed dtype for Vehicle Size: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.700] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,658 INFO Reading with FIXED dtypes: {u'Total Claim Amount': <type 'numpy.float64'>, u'EmploymentStatus': 'str', u'Vehicle Class': 'str', u'Vehicle Size': 'str', u'Gender': 'str', u'Sales Channel': 'str', u'Number of Policies': <type 'numpy.float64'>, u'Response': <type 'numpy.float64'>, u'Marital Status': 'str', u'Location Code': 'str', u'Months Since Last Claim': <type 'numpy.float64'>, u'Number of Open Complaints': <type 'numpy.float64'>, u'Income': <type 'numpy.float64'>, u'Monthly Premium Auto': <type 'numpy.float64'>, u'Education': 'str', u'Customer Lifetime Value': <type 'numpy.float64'>, u'Months Since Policy Inception': <type 'numpy.float64'>}
+[2020/06/29-23:33:26.795] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,795 INFO Loaded table
+[2020/06/29-23:33:26.807] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,807 INFO Normalizing date to numeric : 0      2011-02-24
+[2020/06/29-23:33:26.808] [null-err-39] [INFO] [dku.utils]  - 1      2011-01-31
+[2020/06/29-23:33:26.810] [null-err-39] [INFO] [dku.utils]  - 2      2011-02-19
+[2020/06/29-23:33:26.810] [null-err-39] [INFO] [dku.utils]  - 3      2011-01-26
+[2020/06/29-23:33:26.811] [null-err-39] [INFO] [dku.utils]  - 4      2011-02-17
+[2020/06/29-23:33:26.811] [null-err-39] [INFO] [dku.utils]  - 5      2011-02-06
+[2020/06/29-23:33:26.812] [null-err-39] [INFO] [dku.utils]  - 6      2011-01-10
+[2020/06/29-23:33:26.813] [null-err-39] [INFO] [dku.utils]  - 7      2011-01-18
+[2020/06/29-23:33:26.814] [null-err-39] [INFO] [dku.utils]  - 8      2011-01-05
+[2020/06/29-23:33:26.815] [null-err-39] [INFO] [dku.utils]  - 9      2011-02-27
+[2020/06/29-23:33:26.816] [null-err-39] [INFO] [dku.utils]  - 10     2011-02-19
+[2020/06/29-23:33:26.816] [null-err-39] [INFO] [dku.utils]  - 11     2011-01-26
+[2020/06/29-23:33:26.817] [null-err-39] [INFO] [dku.utils]  - 12     2011-02-05
+[2020/06/29-23:33:26.818] [null-err-39] [INFO] [dku.utils]  - 13     2011-01-29
+[2020/06/29-23:33:26.819] [null-err-39] [INFO] [dku.utils]  - 14     2011-02-28
+[2020/06/29-23:33:26.820] [null-err-39] [INFO] [dku.utils]  - 15     2011-02-12
+[2020/06/29-23:33:26.821] [null-err-39] [INFO] [dku.utils]  - 16     2011-02-07
+[2020/06/29-23:33:26.822] [null-err-39] [INFO] [dku.utils]  - 17     2011-02-28
+[2020/06/29-23:33:26.826] [null-err-39] [INFO] [dku.utils]  - 18     2011-01-25
+[2020/06/29-23:33:26.827] [null-err-39] [INFO] [dku.utils]  - 19     2011-01-18
+[2020/06/29-23:33:26.830] [null-err-39] [INFO] [dku.utils]  - 20     2011-02-13
+[2020/06/29-23:33:26.831] [null-err-39] [INFO] [dku.utils]  - 21     2011-01-15
+[2020/06/29-23:33:26.832] [null-err-39] [INFO] [dku.utils]  - 22     2011-01-08
+[2020/06/29-23:33:26.833] [null-err-39] [INFO] [dku.utils]  - 23     2011-01-18
+[2020/06/29-23:33:26.834] [null-err-39] [INFO] [dku.utils]  - 24     2011-01-28
+[2020/06/29-23:33:26.834] [null-err-39] [INFO] [dku.utils]  - 25     2011-02-08
+[2020/06/29-23:33:26.835] [null-err-39] [INFO] [dku.utils]  - 26     2011-01-31
+[2020/06/29-23:33:26.836] [null-err-39] [INFO] [dku.utils]  - 27     2011-01-02
+[2020/06/29-23:33:26.837] [null-err-39] [INFO] [dku.utils]  - 28     2011-02-07
+[2020/06/29-23:33:26.838] [null-err-39] [INFO] [dku.utils]  - 29     2011-01-17
+[2020/06/29-23:33:26.839] [null-err-39] [INFO] [dku.utils]  -           ...    
+[2020/06/29-23:33:26.839] [null-err-39] [INFO] [dku.utils]  - 6364   2011-01-02
+[2020/06/29-23:33:26.840] [null-err-39] [INFO] [dku.utils]  - 6365   2011-02-14
+[2020/06/29-23:33:26.843] [null-err-39] [INFO] [dku.utils]  - 6366   2011-01-26
+[2020/06/29-23:33:26.844] [null-err-39] [INFO] [dku.utils]  - 6367   2011-02-14
+[2020/06/29-23:33:26.845] [null-err-39] [INFO] [dku.utils]  - 6368   2011-01-30
+[2020/06/29-23:33:26.846] [null-err-39] [INFO] [dku.utils]  - 6369   2011-02-11
+[2020/06/29-23:33:26.846] [null-err-39] [INFO] [dku.utils]  - 6370   2011-01-29
+[2020/06/29-23:33:26.847] [null-err-39] [INFO] [dku.utils]  - 6371   2011-01-16
+[2020/06/29-23:33:26.848] [null-err-39] [INFO] [dku.utils]  - 6372   2011-01-26
+[2020/06/29-23:33:26.848] [null-err-39] [INFO] [dku.utils]  - 6373   2011-02-05
+[2020/06/29-23:33:26.849] [null-err-39] [INFO] [dku.utils]  - 6374   2011-01-09
+[2020/06/29-23:33:26.849] [null-err-39] [INFO] [dku.utils]  - 6375   2011-02-22
+[2020/06/29-23:33:26.850] [null-err-39] [INFO] [dku.utils]  - 6376   2011-01-26
+[2020/06/29-23:33:26.851] [null-err-39] [INFO] [dku.utils]  - 6377   2011-01-28
+[2020/06/29-23:33:26.851] [null-err-39] [INFO] [dku.utils]  - 6378   2011-01-25
+[2020/06/29-23:33:26.852] [null-err-39] [INFO] [dku.utils]  - 6379   2011-01-14
+[2020/06/29-23:33:26.853] [null-err-39] [INFO] [dku.utils]  - 6380   2011-02-07
+[2020/06/29-23:33:26.854] [null-err-39] [INFO] [dku.utils]  - 6381   2011-01-06
+[2020/06/29-23:33:26.857] [null-err-39] [INFO] [dku.utils]  - 6382   2011-02-10
+[2020/06/29-23:33:26.858] [null-err-39] [INFO] [dku.utils]  - 6383   2011-01-13
+[2020/06/29-23:33:26.859] [null-err-39] [INFO] [dku.utils]  - 6384   2011-02-19
+[2020/06/29-23:33:26.859] [null-err-39] [INFO] [dku.utils]  - 6385   2011-01-17
+[2020/06/29-23:33:26.860] [null-err-39] [INFO] [dku.utils]  - 6386   2011-01-19
+[2020/06/29-23:33:26.862] [null-err-39] [INFO] [dku.utils]  - 6387   2011-01-20
+[2020/06/29-23:33:26.863] [null-err-39] [INFO] [dku.utils]  - 6388   2011-01-31
+[2020/06/29-23:33:26.865] [null-err-39] [INFO] [dku.utils]  - 6389   2011-02-12
+[2020/06/29-23:33:26.866] [null-err-39] [INFO] [dku.utils]  - 6390   2011-02-10
+[2020/06/29-23:33:26.867] [null-err-39] [INFO] [dku.utils]  - 6391   2011-02-12
+[2020/06/29-23:33:26.868] [null-err-39] [INFO] [dku.utils]  - 6392   2011-02-06
+[2020/06/29-23:33:26.869] [null-err-39] [INFO] [dku.utils]  - 6393   2011-02-03
+[2020/06/29-23:33:26.870] [null-err-39] [INFO] [dku.utils]  - Name: Effective To Date_parsed, Length: 6394, dtype: datetime64[ns]
+[2020/06/29-23:33:26.871] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,828 INFO Normalized date : 0       3.507494e+09
+[2020/06/29-23:33:26.872] [null-err-39] [INFO] [dku.utils]  - 1       3.505421e+09
+[2020/06/29-23:33:26.875] [null-err-39] [INFO] [dku.utils]  - 2       3.507062e+09
+[2020/06/29-23:33:26.876] [null-err-39] [INFO] [dku.utils]  - 3       3.504989e+09
+[2020/06/29-23:33:26.877] [null-err-39] [INFO] [dku.utils]  - 4       3.506890e+09
+[2020/06/29-23:33:26.878] [null-err-39] [INFO] [dku.utils]  - 5       3.505939e+09
+[2020/06/29-23:33:26.878] [null-err-39] [INFO] [dku.utils]  - 6       3.503606e+09
+[2020/06/29-23:33:26.879] [null-err-39] [INFO] [dku.utils]  - 7       3.504298e+09
+[2020/06/29-23:33:26.881] [null-err-39] [INFO] [dku.utils]  - 8       3.503174e+09
+[2020/06/29-23:33:26.882] [null-err-39] [INFO] [dku.utils]  - 9       3.507754e+09
+[2020/06/29-23:33:26.883] [null-err-39] [INFO] [dku.utils]  - 10      3.507062e+09
+[2020/06/29-23:33:26.884] [null-err-39] [INFO] [dku.utils]  - 11      3.504989e+09
+[2020/06/29-23:33:26.887] [null-err-39] [INFO] [dku.utils]  - 12      3.505853e+09
+[2020/06/29-23:33:26.888] [null-err-39] [INFO] [dku.utils]  - 13      3.505248e+09
+[2020/06/29-23:33:26.891] [null-err-39] [INFO] [dku.utils]  - 14      3.507840e+09
+[2020/06/29-23:33:26.892] [null-err-39] [INFO] [dku.utils]  - 15      3.506458e+09
+[2020/06/29-23:33:26.893] [null-err-39] [INFO] [dku.utils]  - 16      3.506026e+09
+[2020/06/29-23:33:26.894] [null-err-39] [INFO] [dku.utils]  - 17      3.507840e+09
+[2020/06/29-23:33:26.895] [null-err-39] [INFO] [dku.utils]  - 18      3.504902e+09
+[2020/06/29-23:33:26.896] [null-err-39] [INFO] [dku.utils]  - 19      3.504298e+09
+[2020/06/29-23:33:26.897] [null-err-39] [INFO] [dku.utils]  - 20      3.506544e+09
+[2020/06/29-23:33:26.900] [null-err-39] [INFO] [dku.utils]  - 21      3.504038e+09
+[2020/06/29-23:33:26.901] [null-err-39] [INFO] [dku.utils]  - 22      3.503434e+09
+[2020/06/29-23:33:26.904] [null-err-39] [INFO] [dku.utils]  - 23      3.504298e+09
+[2020/06/29-23:33:26.905] [null-err-39] [INFO] [dku.utils]  - 24      3.505162e+09
+[2020/06/29-23:33:26.905] [null-err-39] [INFO] [dku.utils]  - 25      3.506112e+09
+[2020/06/29-23:33:26.906] [null-err-39] [INFO] [dku.utils]  - 26      3.505421e+09
+[2020/06/29-23:33:26.907] [null-err-39] [INFO] [dku.utils]  - 27      3.502915e+09
+[2020/06/29-23:33:26.909] [null-err-39] [INFO] [dku.utils]  - 28      3.506026e+09
+[2020/06/29-23:33:26.912] [null-err-39] [INFO] [dku.utils]  - 29      3.504211e+09
+[2020/06/29-23:33:26.913] [null-err-39] [INFO] [dku.utils]  -             ...     
+[2020/06/29-23:33:26.914] [null-err-39] [INFO] [dku.utils]  - 6364    3.502915e+09
+[2020/06/29-23:33:26.914] [null-err-39] [INFO] [dku.utils]  - 6365    3.506630e+09
+[2020/06/29-23:33:26.915] [null-err-39] [INFO] [dku.utils]  - 6366    3.504989e+09
+[2020/06/29-23:33:26.916] [null-err-39] [INFO] [dku.utils]  - 6367    3.506630e+09
+[2020/06/29-23:33:26.920] [null-err-39] [INFO] [dku.utils]  - 6368    3.505334e+09
+[2020/06/29-23:33:26.920] [null-err-39] [INFO] [dku.utils]  - 6369    3.506371e+09
+[2020/06/29-23:33:26.922] [null-err-39] [INFO] [dku.utils]  - 6370    3.505248e+09
+[2020/06/29-23:33:26.923] [null-err-39] [INFO] [dku.utils]  - 6371    3.504125e+09
+[2020/06/29-23:33:26.924] [null-err-39] [INFO] [dku.utils]  - 6372    3.504989e+09
+[2020/06/29-23:33:26.925] [null-err-39] [INFO] [dku.utils]  - 6373    3.505853e+09
+[2020/06/29-23:33:26.926] [null-err-39] [INFO] [dku.utils]  - 6374    3.503520e+09
+[2020/06/29-23:33:26.927] [null-err-39] [INFO] [dku.utils]  - 6375    3.507322e+09
+[2020/06/29-23:33:26.927] [null-err-39] [INFO] [dku.utils]  - 6376    3.504989e+09
+[2020/06/29-23:33:26.928] [null-err-39] [INFO] [dku.utils]  - 6377    3.505162e+09
+[2020/06/29-23:33:26.929] [null-err-39] [INFO] [dku.utils]  - 6378    3.504902e+09
+[2020/06/29-23:33:26.930] [null-err-39] [INFO] [dku.utils]  - 6379    3.503952e+09
+[2020/06/29-23:33:26.933] [null-err-39] [INFO] [dku.utils]  - 6380    3.506026e+09
+[2020/06/29-23:33:26.934] [null-err-39] [INFO] [dku.utils]  - 6381    3.503261e+09
+[2020/06/29-23:33:26.935] [null-err-39] [INFO] [dku.utils]  - 6382    3.506285e+09
+[2020/06/29-23:33:26.935] [null-err-39] [INFO] [dku.utils]  - 6383    3.503866e+09
+[2020/06/29-23:33:26.936] [null-err-39] [INFO] [dku.utils]  - 6384    3.507062e+09
+[2020/06/29-23:33:26.937] [null-err-39] [INFO] [dku.utils]  - 6385    3.504211e+09
+[2020/06/29-23:33:26.938] [null-err-39] [INFO] [dku.utils]  - 6386    3.504384e+09
+[2020/06/29-23:33:26.938] [null-err-39] [INFO] [dku.utils]  - 6387    3.504470e+09
+[2020/06/29-23:33:26.939] [null-err-39] [INFO] [dku.utils]  - 6388    3.505421e+09
+[2020/06/29-23:33:26.940] [null-err-39] [INFO] [dku.utils]  - 6389    3.506458e+09
+[2020/06/29-23:33:26.943] [null-err-39] [INFO] [dku.utils]  - 6390    3.506285e+09
+[2020/06/29-23:33:26.944] [null-err-39] [INFO] [dku.utils]  - 6391    3.506458e+09
+[2020/06/29-23:33:26.945] [null-err-39] [INFO] [dku.utils]  - 6392    3.505939e+09
+[2020/06/29-23:33:26.946] [null-err-39] [INFO] [dku.utils]  - 6393    3.505680e+09
+[2020/06/29-23:33:26.947] [null-err-39] [INFO] [dku.utils]  - Name: Effective To Date_parsed, Length: 6394, dtype: float64
+[2020/06/29-23:33:26.948] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,834 INFO  Coercion done
+[2020/06/29-23:33:26.948] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,834 INFO Loaded train df: shape=(6394,24)
+[2020/06/29-23:33:26.949] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,835 INFO END -  Loading train set
+[2020/06/29-23:33:26.950] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,835 INFO START -  Loading test set
+[2020/06/29-23:33:26.951] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,835 INFO Reading with dtypes: None
+[2020/06/29-23:33:26.952] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,836 INFO Computed dtype for Customer: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.953] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,836 INFO Computed dtype for State: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.953] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,836 INFO Computed dtype for Customer Lifetime Value: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=TARGET)
+[2020/06/29-23:33:26.954] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,836 INFO Computed dtype for Response: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.955] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,836 INFO Computed dtype for Coverage: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.956] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,836 INFO Computed dtype for Education: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.956] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,836 INFO Computed dtype for Effective To Date_parsed: None (schema_type=date feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.957] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,837 INFO Computed dtype for EmploymentStatus: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.961] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,837 INFO Computed dtype for Gender: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.962] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,837 INFO Computed dtype for Income: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.964] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,837 INFO Computed dtype for Location Code: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.965] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,837 INFO Computed dtype for Marital Status: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.968] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,837 INFO Computed dtype for Monthly Premium Auto: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.969] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,838 INFO Computed dtype for Months Since Last Claim: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.969] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,838 INFO Computed dtype for Months Since Policy Inception: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.970] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,839 INFO Computed dtype for Number of Open Complaints: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.971] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,839 INFO Computed dtype for Number of Policies: <type 'numpy.float64'> (schema_type=bigint feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.972] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,839 INFO Computed dtype for Policy Type: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.973] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,840 INFO Computed dtype for Policy: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.974] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,840 INFO Computed dtype for Renew Offer Type: None (schema_type=string feature_type=CATEGORY feature_role=REJECT)
+[2020/06/29-23:33:26.975] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,840 INFO Computed dtype for Sales Channel: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.975] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,840 INFO Computed dtype for Total Claim Amount: <type 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2020/06/29-23:33:26.976] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,840 INFO Computed dtype for Vehicle Class: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.977] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,840 INFO Computed dtype for Vehicle Size: str (schema_type=string feature_type=CATEGORY feature_role=INPUT)
+[2020/06/29-23:33:26.978] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,840 INFO Reading with FIXED dtypes: {u'Total Claim Amount': <type 'numpy.float64'>, u'EmploymentStatus': 'str', u'Vehicle Class': 'str', u'Vehicle Size': 'str', u'Gender': 'str', u'Sales Channel': 'str', u'Number of Policies': <type 'numpy.float64'>, u'Response': <type 'numpy.float64'>, u'Marital Status': 'str', u'Location Code': 'str', u'Months Since Last Claim': <type 'numpy.float64'>, u'Number of Open Complaints': <type 'numpy.float64'>, u'Income': <type 'numpy.float64'>, u'Monthly Premium Auto': <type 'numpy.float64'>, u'Education': 'str', u'Customer Lifetime Value': <type 'numpy.float64'>, u'Months Since Policy Inception': <type 'numpy.float64'>}
+[2020/06/29-23:33:26.979] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,900 INFO Loaded table
+[2020/06/29-23:33:26.982] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,910 INFO Normalizing date to numeric : 0      2011-01-20
+[2020/06/29-23:33:26.983] [null-err-39] [INFO] [dku.utils]  - 1      2011-02-03
+[2020/06/29-23:33:26.983] [null-err-39] [INFO] [dku.utils]  - 2      2011-01-25
+[2020/06/29-23:33:26.984] [null-err-39] [INFO] [dku.utils]  - 3      2011-02-24
+[2020/06/29-23:33:26.985] [null-err-39] [INFO] [dku.utils]  - 4      2011-01-18
+[2020/06/29-23:33:26.986] [null-err-39] [INFO] [dku.utils]  - 5      2011-02-21
+[2020/06/29-23:33:26.987] [null-err-39] [INFO] [dku.utils]  - 6      2011-01-06
+[2020/06/29-23:33:26.987] [null-err-39] [INFO] [dku.utils]  - 7      2011-01-17
+[2020/06/29-23:33:26.988] [null-err-39] [INFO] [dku.utils]  - 8      2011-02-06
+[2020/06/29-23:33:26.989] [null-err-39] [INFO] [dku.utils]  - 9      2011-01-14
+[2020/06/29-23:33:26.990] [null-err-39] [INFO] [dku.utils]  - 10     2011-01-21
+[2020/06/29-23:33:26.990] [null-err-39] [INFO] [dku.utils]  - 11     2011-02-24
+[2020/06/29-23:33:26.991] [null-err-39] [INFO] [dku.utils]  - 12     2011-02-02
+[2020/06/29-23:33:26.992] [null-err-39] [INFO] [dku.utils]  - 13     2011-01-22
+[2020/06/29-23:33:26.994] [null-err-39] [INFO] [dku.utils]  - 14     2011-02-06
+[2020/06/29-23:33:26.994] [null-err-39] [INFO] [dku.utils]  - 15     2011-01-25
+[2020/06/29-23:33:26.998] [null-err-39] [INFO] [dku.utils]  - 16     2011-02-07
+[2020/06/29-23:33:26.999] [null-err-39] [INFO] [dku.utils]  - 17     2011-01-11
+[2020/06/29-23:33:26.999] [null-err-39] [INFO] [dku.utils]  - 18     2011-02-23
+[2020/06/29-23:33:27.000] [null-err-39] [INFO] [dku.utils]  - 19     2011-01-25
+[2020/06/29-23:33:27.001] [null-err-39] [INFO] [dku.utils]  - 20     2011-01-18
+[2020/06/29-23:33:27.002] [null-err-39] [INFO] [dku.utils]  - 21     2011-02-21
+[2020/06/29-23:33:27.002] [null-err-39] [INFO] [dku.utils]  - 22     2011-02-16
+[2020/06/29-23:33:27.003] [null-err-39] [INFO] [dku.utils]  - 23     2011-02-23
+[2020/06/29-23:33:27.004] [null-err-39] [INFO] [dku.utils]  - 24     2011-01-28
+[2020/06/29-23:33:27.005] [null-err-39] [INFO] [dku.utils]  - 25     2011-01-22
+[2020/06/29-23:33:27.006] [null-err-39] [INFO] [dku.utils]  - 26     2011-02-24
+[2020/06/29-23:33:27.007] [null-err-39] [INFO] [dku.utils]  - 27     2011-02-06
+[2020/06/29-23:33:27.007] [null-err-39] [INFO] [dku.utils]  - 28     2011-02-27
+[2020/06/29-23:33:27.013] [null-err-39] [INFO] [dku.utils]  - 29     2011-01-27
+[2020/06/29-23:33:27.015] [null-err-39] [INFO] [dku.utils]  -           ...    
+[2020/06/29-23:33:27.016] [null-err-39] [INFO] [dku.utils]  - 2710   2011-02-23
+[2020/06/29-23:33:27.017] [null-err-39] [INFO] [dku.utils]  - 2711   2011-02-06
+[2020/06/29-23:33:27.018] [null-err-39] [INFO] [dku.utils]  - 2712   2011-02-08
+[2020/06/29-23:33:27.019] [null-err-39] [INFO] [dku.utils]  - 2713   2011-02-16
+[2020/06/29-23:33:27.021] [null-err-39] [INFO] [dku.utils]  - 2714   2011-02-13
+[2020/06/29-23:33:27.022] [null-err-39] [INFO] [dku.utils]  - 2715   2011-01-24
+[2020/06/29-23:33:27.022] [null-err-39] [INFO] [dku.utils]  - 2716   2011-02-09
+[2020/06/29-23:33:27.023] [null-err-39] [INFO] [dku.utils]  - 2717   2011-02-02
+[2020/06/29-23:33:27.024] [null-err-39] [INFO] [dku.utils]  - 2718   2011-01-20
+[2020/06/29-23:33:27.025] [null-err-39] [INFO] [dku.utils]  - 2719   2011-02-04
+[2020/06/29-23:33:27.025] [null-err-39] [INFO] [dku.utils]  - 2720   2011-02-25
+[2020/06/29-23:33:27.026] [null-err-39] [INFO] [dku.utils]  - 2721   2011-01-06
+[2020/06/29-23:33:27.027] [null-err-39] [INFO] [dku.utils]  - 2722   2011-02-02
+[2020/06/29-23:33:27.027] [null-err-39] [INFO] [dku.utils]  - 2723   2011-02-05
+[2020/06/29-23:33:27.028] [null-err-39] [INFO] [dku.utils]  - 2724   2011-02-20
+[2020/06/29-23:33:27.029] [null-err-39] [INFO] [dku.utils]  - 2725   2011-01-13
+[2020/06/29-23:33:27.029] [null-err-39] [INFO] [dku.utils]  - 2726   2011-01-07
+[2020/06/29-23:33:27.030] [null-err-39] [INFO] [dku.utils]  - 2727   2011-02-09
+[2020/06/29-23:33:27.031] [null-err-39] [INFO] [dku.utils]  - 2728   2011-02-10
+[2020/06/29-23:33:27.031] [null-err-39] [INFO] [dku.utils]  - 2729   2011-01-01
+[2020/06/29-23:33:27.032] [null-err-39] [INFO] [dku.utils]  - 2730   2011-01-12
+[2020/06/29-23:33:27.034] [null-err-39] [INFO] [dku.utils]  - 2731   2011-02-12
+[2020/06/29-23:33:27.037] [null-err-39] [INFO] [dku.utils]  - 2732   2011-02-23
+[2020/06/29-23:33:27.037] [null-err-39] [INFO] [dku.utils]  - 2733   2011-02-17
+[2020/06/29-23:33:27.038] [null-err-39] [INFO] [dku.utils]  - 2734   2011-01-26
+[2020/06/29-23:33:27.039] [null-err-39] [INFO] [dku.utils]  - 2735   2011-01-20
+[2020/06/29-23:33:27.039] [null-err-39] [INFO] [dku.utils]  - 2736   2011-02-01
+[2020/06/29-23:33:27.040] [null-err-39] [INFO] [dku.utils]  - 2737   2011-01-09
+[2020/06/29-23:33:27.041] [null-err-39] [INFO] [dku.utils]  - 2738   2011-01-06
+[2020/06/29-23:33:27.042] [null-err-39] [INFO] [dku.utils]  - 2739   2011-02-14
+[2020/06/29-23:33:27.043] [null-err-39] [INFO] [dku.utils]  - Name: Effective To Date_parsed, Length: 2740, dtype: datetime64[ns]
+[2020/06/29-23:33:27.044] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,918 INFO Normalized date : 0       3.504470e+09
+[2020/06/29-23:33:27.047] [null-err-39] [INFO] [dku.utils]  - 1       3.505680e+09
+[2020/06/29-23:33:27.048] [null-err-39] [INFO] [dku.utils]  - 2       3.504902e+09
+[2020/06/29-23:33:27.049] [null-err-39] [INFO] [dku.utils]  - 3       3.507494e+09
+[2020/06/29-23:33:27.050] [null-err-39] [INFO] [dku.utils]  - 4       3.504298e+09
+[2020/06/29-23:33:27.050] [null-err-39] [INFO] [dku.utils]  - 5       3.507235e+09
+[2020/06/29-23:33:27.051] [null-err-39] [INFO] [dku.utils]  - 6       3.503261e+09
+[2020/06/29-23:33:27.052] [null-err-39] [INFO] [dku.utils]  - 7       3.504211e+09
+[2020/06/29-23:33:27.054] [null-err-39] [INFO] [dku.utils]  - 8       3.505939e+09
+[2020/06/29-23:33:27.055] [null-err-39] [INFO] [dku.utils]  - 9       3.503952e+09
+[2020/06/29-23:33:27.058] [null-err-39] [INFO] [dku.utils]  - 10      3.504557e+09
+[2020/06/29-23:33:27.059] [null-err-39] [INFO] [dku.utils]  - 11      3.507494e+09
+[2020/06/29-23:33:27.062] [null-err-39] [INFO] [dku.utils]  - 12      3.505594e+09
+[2020/06/29-23:33:27.063] [null-err-39] [INFO] [dku.utils]  - 13      3.504643e+09
+[2020/06/29-23:33:27.065] [null-err-39] [INFO] [dku.utils]  - 14      3.505939e+09
+[2020/06/29-23:33:27.066] [null-err-39] [INFO] [dku.utils]  - 15      3.504902e+09
+[2020/06/29-23:33:27.067] [null-err-39] [INFO] [dku.utils]  - 16      3.506026e+09
+[2020/06/29-23:33:27.067] [null-err-39] [INFO] [dku.utils]  - 17      3.503693e+09
+[2020/06/29-23:33:27.068] [null-err-39] [INFO] [dku.utils]  - 18      3.507408e+09
+[2020/06/29-23:33:27.069] [null-err-39] [INFO] [dku.utils]  - 19      3.504902e+09
+[2020/06/29-23:33:27.070] [null-err-39] [INFO] [dku.utils]  - 20      3.504298e+09
+[2020/06/29-23:33:27.070] [null-err-39] [INFO] [dku.utils]  - 21      3.507235e+09
+[2020/06/29-23:33:27.071] [null-err-39] [INFO] [dku.utils]  - 22      3.506803e+09
+[2020/06/29-23:33:27.072] [null-err-39] [INFO] [dku.utils]  - 23      3.507408e+09
+[2020/06/29-23:33:27.072] [null-err-39] [INFO] [dku.utils]  - 24      3.505162e+09
+[2020/06/29-23:33:27.073] [null-err-39] [INFO] [dku.utils]  - 25      3.504643e+09
+[2020/06/29-23:33:27.074] [null-err-39] [INFO] [dku.utils]  - 26      3.507494e+09
+[2020/06/29-23:33:27.075] [null-err-39] [INFO] [dku.utils]  - 27      3.505939e+09
+[2020/06/29-23:33:27.075] [null-err-39] [INFO] [dku.utils]  - 28      3.507754e+09
+[2020/06/29-23:33:27.076] [null-err-39] [INFO] [dku.utils]  - 29      3.505075e+09
+[2020/06/29-23:33:27.077] [null-err-39] [INFO] [dku.utils]  -             ...     
+[2020/06/29-23:33:27.078] [null-err-39] [INFO] [dku.utils]  - 2710    3.507408e+09
+[2020/06/29-23:33:27.081] [null-err-39] [INFO] [dku.utils]  - 2711    3.505939e+09
+[2020/06/29-23:33:27.082] [null-err-39] [INFO] [dku.utils]  - 2712    3.506112e+09
+[2020/06/29-23:33:27.083] [null-err-39] [INFO] [dku.utils]  - 2713    3.506803e+09
+[2020/06/29-23:33:27.084] [null-err-39] [INFO] [dku.utils]  - 2714    3.506544e+09
+[2020/06/29-23:33:27.085] [null-err-39] [INFO] [dku.utils]  - 2715    3.504816e+09
+[2020/06/29-23:33:27.086] [null-err-39] [INFO] [dku.utils]  - 2716    3.506198e+09
+[2020/06/29-23:33:27.087] [null-err-39] [INFO] [dku.utils]  - 2717    3.505594e+09
+[2020/06/29-23:33:27.088] [null-err-39] [INFO] [dku.utils]  - 2718    3.504470e+09
+[2020/06/29-23:33:27.088] [null-err-39] [INFO] [dku.utils]  - 2719    3.505766e+09
+[2020/06/29-23:33:27.089] [null-err-39] [INFO] [dku.utils]  - 2720    3.507581e+09
+[2020/06/29-23:33:27.090] [null-err-39] [INFO] [dku.utils]  - 2721    3.503261e+09
+[2020/06/29-23:33:27.090] [null-err-39] [INFO] [dku.utils]  - 2722    3.505594e+09
+[2020/06/29-23:33:27.091] [null-err-39] [INFO] [dku.utils]  - 2723    3.505853e+09
+[2020/06/29-23:33:27.092] [null-err-39] [INFO] [dku.utils]  - 2724    3.507149e+09
+[2020/06/29-23:33:27.093] [null-err-39] [INFO] [dku.utils]  - 2725    3.503866e+09
+[2020/06/29-23:33:27.093] [null-err-39] [INFO] [dku.utils]  - 2726    3.503347e+09
+[2020/06/29-23:33:27.094] [null-err-39] [INFO] [dku.utils]  - 2727    3.506198e+09
+[2020/06/29-23:33:27.095] [null-err-39] [INFO] [dku.utils]  - 2728    3.506285e+09
+[2020/06/29-23:33:27.096] [null-err-39] [INFO] [dku.utils]  - 2729    3.502829e+09
+[2020/06/29-23:33:27.099] [null-err-39] [INFO] [dku.utils]  - 2730    3.503779e+09
+[2020/06/29-23:33:27.103] [null-err-39] [INFO] [dku.utils]  - 2731    3.506458e+09
+[2020/06/29-23:33:27.103] [null-err-39] [INFO] [dku.utils]  - 2732    3.507408e+09
+[2020/06/29-23:33:27.104] [null-err-39] [INFO] [dku.utils]  - 2733    3.506890e+09
+[2020/06/29-23:33:27.105] [null-err-39] [INFO] [dku.utils]  - 2734    3.504989e+09
+[2020/06/29-23:33:27.106] [null-err-39] [INFO] [dku.utils]  - 2735    3.504470e+09
+[2020/06/29-23:33:27.108] [null-err-39] [INFO] [dku.utils]  - 2736    3.505507e+09
+[2020/06/29-23:33:27.109] [null-err-39] [INFO] [dku.utils]  - 2737    3.503520e+09
+[2020/06/29-23:33:27.112] [null-err-39] [INFO] [dku.utils]  - 2738    3.503261e+09
+[2020/06/29-23:33:27.113] [null-err-39] [INFO] [dku.utils]  - 2739    3.506630e+09
+[2020/06/29-23:33:27.114] [null-err-39] [INFO] [dku.utils]  - Name: Effective To Date_parsed, Length: 2740, dtype: float64
+[2020/06/29-23:33:27.117] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,927 INFO  Coercion done
+[2020/06/29-23:33:27.118] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,927 INFO Loaded test df: shape=(2740,24)
+[2020/06/29-23:33:27.118] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,927 INFO END -  Loading test set
+[2020/06/29-23:33:27.119] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,927 INFO START -  Collecting preprocessing data
+[2020/06/29-23:33:27.120] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,928 INFO Looking at Effective To Date_parsed... (type=NUMERIC)
+[2020/06/29-23:33:27.121] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,928 INFO Checking series of type: float64 (isM8=False)
+[2020/06/29-23:33:27.122] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,940 INFO Looking at Vehicle Size... (type=CATEGORY)
+[2020/06/29-23:33:27.122] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,967 INFO Looking at Monthly Premium Auto... (type=NUMERIC)
+[2020/06/29-23:33:27.123] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,968 INFO Checking series of type: float64 (isM8=False)
+[2020/06/29-23:33:27.124] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,973 INFO Looking at State... (type=CATEGORY)
+[2020/06/29-23:33:27.125] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,974 INFO Looking at Income... (type=NUMERIC)
+[2020/06/29-23:33:27.126] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,974 INFO Checking series of type: float64 (isM8=False)
+[2020/06/29-23:33:27.126] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,981 INFO Looking at Policy... (type=CATEGORY)
+[2020/06/29-23:33:27.127] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,981 INFO Looking at Customer Lifetime Value... (type=NUMERIC)
+[2020/06/29-23:33:27.128] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,981 INFO Looking at Vehicle Class... (type=CATEGORY)
+[2020/06/29-23:33:27.128] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,990 INFO Looking at Total Claim Amount... (type=NUMERIC)
+[2020/06/29-23:33:27.129] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,992 INFO Checking series of type: float64 (isM8=False)
+[2020/06/29-23:33:27.130] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,998 INFO Looking at Policy Type... (type=CATEGORY)
+[2020/06/29-23:33:27.133] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,998 INFO Looking at Coverage... (type=CATEGORY)
+[2020/06/29-23:33:27.138] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,999 INFO Looking at Response... (type=NUMERIC)
+[2020/06/29-23:33:27.139] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:26,999 INFO Checking series of type: float64 (isM8=False)
+[2020/06/29-23:33:27.142] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,010 INFO Looking at Customer... (type=CATEGORY)
+[2020/06/29-23:33:27.145] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,010 INFO Looking at Gender... (type=CATEGORY)
+[2020/06/29-23:33:27.151] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,017 INFO Looking at Months Since Last Claim... (type=NUMERIC)
+[2020/06/29-23:33:27.153] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,017 INFO Checking series of type: float64 (isM8=False)
+[2020/06/29-23:33:27.155] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,020 INFO Looking at Renew Offer Type... (type=CATEGORY)
+[2020/06/29-23:33:27.158] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,020 INFO Looking at EmploymentStatus... (type=CATEGORY)
+[2020/06/29-23:33:27.159] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,042 INFO Looking at Sales Channel... (type=CATEGORY)
+[2020/06/29-23:33:27.161] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,059 INFO Looking at Number of Policies... (type=NUMERIC)
+[2020/06/29-23:33:27.162] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,059 INFO Checking series of type: float64 (isM8=False)
+[2020/06/29-23:33:27.163] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,062 INFO Looking at Number of Open Complaints... (type=NUMERIC)
+[2020/06/29-23:33:27.163] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,062 INFO Checking series of type: float64 (isM8=False)
+[2020/06/29-23:33:27.164] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,065 INFO Looking at Marital Status... (type=CATEGORY)
+[2020/06/29-23:33:27.165] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,075 INFO Looking at Location Code... (type=CATEGORY)
+[2020/06/29-23:33:27.166] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,083 INFO Looking at Education... (type=CATEGORY)
+[2020/06/29-23:33:27.167] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,090 INFO Looking at Months Since Policy Inception... (type=NUMERIC)
+[2020/06/29-23:33:27.168] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,091 INFO Checking series of type: float64 (isM8=False)
+[2020/06/29-23:33:27.169] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,096 INFO generating interactions
+[2020/06/29-23:33:27.171] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,096 INFO {u'preprocessingFitSampleSeed': 1337, u'feature_selection_params': {u'custom_params': {u'code': u'# type your code here'}, u'pca_params': {u'variance_proportion': 0.9, u'n_features': 25}, u'random_forest_params': {u'depth': 10, u'n_features': 25, u'n_trees': 30}, u'lasso_params': {u'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], u'cross_validate': True}, u'method': u'NONE', u'correlation_params': {u'n_features': 25, u'min_abs_correlation': 0.0}}, u'preprocessingFitSampleRatio': 1.0, u'reduce': {u'enabled': False, u'kept_variance': 0.0}, u'skipPreprocessing': False, u'target_remapping': [], u'per_feature': {u'Effective To Date_parsed': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'Date', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Vehicle Size': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Monthly Premium Auto': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'State': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'USStateMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Income': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Policy': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Customer Lifetime Value': {u'generate_derivative': False, u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'sendToInput': u'main', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': False, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'role': u'TARGET', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Vehicle Class': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Total Claim Amount': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'DoubleMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Policy Type': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Coverage': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Response': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Customer': {u'missing_impute_with': u'MODE', u'autoReason': u'REJECT_IDENTIFIER', u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'customProcessorWantsMatrix': False, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Gender': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Gender', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Months Since Last Claim': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Renew Offer Type': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'REJECT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'EmploymentStatus': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Sales Channel': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Number of Policies': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Number of Open Complaints': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}, u'Marital Status': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Location Code': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Education': {u'missing_impute_with': u'MODE', u'customProcessorWantsMatrix': False, u'customHandlingCode': u'', u'category_handling': u'DUMMIFY', u'cumulative_proportion': 0.95, u'sendToInput': u'main', u'state': {u'userModified': False, u'recordedMeaning': u'Text', u'autoModifiedByDSS': False}, u'missing_handling': u'NONE', u'max_nb_categories': 100, u'dummy_clip': u'MAX_NB_CATEGORIES', u'role': u'INPUT', u'max_cat_safety': 200, u'min_samples': 10, u'type': u'CATEGORY', u'dummy_drop': u'NONE'}, u'Months Since Policy Inception': {u'generate_derivative': False, u'sendToInput': u'main', u'rescaling': u'AVGSTD', u'role': u'INPUT', u'customHandlingCode': u'', u'customProcessorWantsMatrix': False, u'numerical_handling': u'REGULAR', u'binarize_threshold_mode': u'MEDIAN', u'state': {u'userModified': True, u'recordedMeaning': u'LongMeaning', u'autoModifiedByDSS': False}, u'missing_handling': u'IMPUTE', u'binarize_constant_threshold': 0.0, u'quantile_bin_nb_bins': 4, u'missing_impute_with': u'MEAN', u'type': u'NUMERIC', u'impute_constant_value': 0.0}}, u'feature_generation': {u'manual_interactions': {u'interactions': []}, u'pairwise_linear': {u'behavior': u'DISABLED'}, u'categoricals_count_transformer': {u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}, u'polynomial_combinations': {u'behavior': u'DISABLED'}, u'numericals_clustering': {u'k': 0, u'input_features': [], u'all_features': False, u'behavior': u'DISABLED'}}}
+[2020/06/29-23:33:27.175] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,097 INFO No feature selection to perform
+[2020/06/29-23:33:27.176] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,097 INFO END -  Collecting preprocessing data
+[2020/06/29-23:33:27.177] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,097 INFO START -  Preprocessing train set
+[2020/06/29-23:33:27.178] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,097 INFO Set MF index len 6394
+[2020/06/29-23:33:27.179] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,097 DEBUG FIT/PROCESS WITH Step:RemapValueToOutput
+[2020/06/29-23:33:27.179] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,098 DEBUG FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/06/29-23:33:27.181] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,098 DEBUG MIMIFI: Imputing with map {u'Effective To Date_parsed': 3505323103.4094462, u'Monthly Premium Auto': 92.95886768845793, u'Total Claim Amount': 430.3417782649336, u'Number of Policies': 2.960118861432593, u'Number of Open Complaints': 0.38974038160775726, u'Months Since Last Claim': 15.120425398811385, u'Income': 37989.521895527054, u'Response': 0.13934939005317484, u'Months Since Policy Inception': 48.403659680950895}
+[2020/06/29-23:33:27.182] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,107 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Effective To Date_parsed)
+[2020/06/29-23:33:27.183] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,109 DEBUG   Rescale Effective To Date_parsed (avg=3505323103.41 std=1463109.46713 shift=3505323103.41 inv_scale=6.83475859096e-07)
+[2020/06/29-23:33:27.186] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,164 DEBUG   Rescaled Effective To Date_parsed (avg=7.9611286284e-14 std=1.0) nulls=0
+[2020/06/29-23:33:27.190] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,164 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Monthly Premium Auto)
+[2020/06/29-23:33:27.190] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,165 DEBUG   Rescale Monthly Premium Auto (avg=92.9588676885 std=34.1413504898 shift=92.9588676885 inv_scale=0.0292899954353)
+[2020/06/29-23:33:27.194] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,167 DEBUG   Rescaled Monthly Premium Auto (avg=1.68534598573e-17 std=1.0) nulls=0
+[2020/06/29-23:33:27.194] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,168 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Income)
+[2020/06/29-23:33:27.195] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,168 DEBUG   Rescale Income (avg=37989.5218955 std=30448.3146105 shift=37989.5218955 inv_scale=3.28425403111e-05)
+[2020/06/29-23:33:27.196] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,171 DEBUG   Rescaled Income (avg=2.09681783631e-16 std=1.0) nulls=0
+[2020/06/29-23:33:27.197] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,171 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Total Claim Amount)
+[2020/06/29-23:33:27.198] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,173 DEBUG   Rescale Total Claim Amount (avg=430.341778265 std=291.131851712 shift=430.341778265 inv_scale=0.00343486978193)
+[2020/06/29-23:33:27.199] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,180 DEBUG   Rescaled Total Claim Amount (avg=7.71228213881e-15 std=1.0) nulls=0
+[2020/06/29-23:33:27.199] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,180 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Response)
+[2020/06/29-23:33:27.200] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,181 DEBUG   Rescale Response (avg=0.139349390053 std=0.346337836951 shift=0.139349390053 inv_scale=2.8873541765)
+[2020/06/29-23:33:27.201] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,184 DEBUG   Rescaled Response (avg=-2.24388679187e-16 std=1.0) nulls=0
+[2020/06/29-23:33:27.202] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,184 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Months Since Last Claim)
+[2020/06/29-23:33:27.202] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,185 DEBUG   Rescale Months Since Last Claim (avg=15.1204253988 std=10.0825256765 shift=15.1204253988 inv_scale=0.0991814979783)
+[2020/06/29-23:33:27.203] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,190 DEBUG   Rescaled Months Since Last Claim (avg=8.71648355273e-17 std=1.0) nulls=0
+[2020/06/29-23:33:27.204] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,190 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Number of Policies)
+[2020/06/29-23:33:27.205] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,191 DEBUG   Rescale Number of Policies (avg=2.96011886143 std=2.38965228171 shift=2.96011886143 inv_scale=0.418470924684)
+[2020/06/29-23:33:27.205] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,193 DEBUG   Rescaled Number of Policies (avg=2.3995344081e-16 std=1.0) nulls=0
+[2020/06/29-23:33:27.206] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,194 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Number of Open Complaints)
+[2020/06/29-23:33:27.207] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,195 DEBUG   Rescale Number of Open Complaints (avg=0.389740381608 std=0.917934603862 shift=0.389740381608 inv_scale=1.08940222516)
+[2020/06/29-23:33:27.208] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,198 DEBUG   Rescaled Number of Open Complaints (avg=-1.60473587638e-16 std=1.0) nulls=0
+[2020/06/29-23:33:27.208] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,198 DEBUG FIT/PROCESS WITH Step:RescalingProcessor2 (Months Since Policy Inception)
+[2020/06/29-23:33:27.209] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,199 DEBUG   Rescale Months Since Policy Inception (avg=48.403659681 std=28.0505151863 shift=48.403659681 inv_scale=0.0356499691132)
+[2020/06/29-23:33:27.210] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,202 DEBUG   Rescaled Months Since Policy Inception (avg=-1.13001742951e-16 std=1.0) nulls=0
+[2020/06/29-23:33:27.211] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,202 DEBUG FIT/PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020/06/29-23:33:27.212] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,202 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Vehicle Size)
+[2020/06/29-23:33:27.223] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,222 DEBUG Dummifier: Append a sparse block shape=(6394, 5) nnz=6394
+[2020/06/29-23:33:27.224] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,223 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Vehicle Class)
+[2020/06/29-23:33:27.233] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,231 DEBUG Dummifier: Append a sparse block shape=(6394, 8) nnz=6394
+[2020/06/29-23:33:27.234] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,232 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Gender)
+[2020/06/29-23:33:27.245] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,243 DEBUG Dummifier: Append a sparse block shape=(6394, 4) nnz=6394
+[2020/06/29-23:33:27.245] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,243 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (EmploymentStatus)
+[2020/06/29-23:33:27.254] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,253 DEBUG Dummifier: Append a sparse block shape=(6394, 7) nnz=6394
+[2020/06/29-23:33:27.254] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,254 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Sales Channel)
+[2020/06/29-23:33:27.266] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,264 DEBUG Dummifier: Append a sparse block shape=(6394, 6) nnz=6394
+[2020/06/29-23:33:27.267] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,264 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Marital Status)
+[2020/06/29-23:33:27.276] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,275 DEBUG Dummifier: Append a sparse block shape=(6394, 5) nnz=6394
+[2020/06/29-23:33:27.277] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,275 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Location Code)
+[2020/06/29-23:33:27.287] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,284 DEBUG Dummifier: Append a sparse block shape=(6394, 5) nnz=6394
+[2020/06/29-23:33:27.288] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,285 DEBUG FIT/PROCESS WITH Step:FastSparseDummifyProcessor (Education)
+[2020/06/29-23:33:27.300] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,299 DEBUG Dummifier: Append a sparse block shape=(6394, 7) nnz=6394
+[2020/06/29-23:33:27.302] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,301 DEBUG FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/06/29-23:33:27.303] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,301 DEBUG MIMIFI: Imputing with map {}
+[2020/06/29-23:33:27.304] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,302 DEBUG FIT/PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020/06/29-23:33:27.308] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,302 DEBUG FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/06/29-23:33:27.309] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,302 DEBUG MIMIFI: Imputing with map {}
+[2020/06/29-23:33:27.312] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,302 DEBUG FIT/PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020/06/29-23:33:27.313] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,302 DEBUG FIT/PROCESS WITH Step:RealignTarget
+[2020/06/29-23:33:27.313] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,302 DEBUG Realign target series = (6394,)
+[2020/06/29-23:33:27.314] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,313 DEBUG After realign target: (6394,)
+[2020/06/29-23:33:27.315] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,314 DEBUG FIT/PROCESS WITH Step:DropRowsWhereNoTarget
+[2020/06/29-23:33:27.317] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,316 DEBUG Deleting 0 rows because no target
+[2020/06/29-23:33:27.318] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,316 DEBUG MF before = (6394, 56) target before = (6394,)
+[2020/06/29-23:33:27.324] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,323 INFO MultiFrame, dropping rows: []
+[2020/06/29-23:33:27.356] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,356 DEBUG After DRWNT input_df=(6394, 24)
+[2020/06/29-23:33:27.358] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,356 DEBUG MF after = (6394, 56) target after = (6394,)
+[2020/06/29-23:33:27.360] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,356 DEBUG FIT/PROCESS WITH Step:DumpPipelineState
+[2020/06/29-23:33:27.361] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,356 DEBUG ********* Pipeline state (Before feature selection)
+[2020/06/29-23:33:27.362] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,356 DEBUG    input_df= (6394, 24) 
+[2020/06/29-23:33:27.363] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,357 DEBUG    current_mf=(6394, 56) 
+[2020/06/29-23:33:27.364] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,357 DEBUG    PPR: 
+[2020/06/29-23:33:27.365] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,357 DEBUG       target = <class 'pandas.core.series.Series'> ((6394,))
+[2020/06/29-23:33:27.366] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,357 DEBUG FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2020/06/29-23:33:27.367] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,358 INFO Set MF index len 6394
+[2020/06/29-23:33:27.369] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,358 DEBUG FIT/PROCESS WITH Step:DumpPipelineState
+[2020/06/29-23:33:27.369] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,358 DEBUG ********* Pipeline state (At end)
+[2020/06/29-23:33:27.370] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,359 DEBUG    input_df= (6394, 24) 
+[2020/06/29-23:33:27.372] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,363 DEBUG    current_mf=(0, 0) 
+[2020/06/29-23:33:27.375] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,363 DEBUG    PPR: 
+[2020/06/29-23:33:27.376] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,364 DEBUG       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((6394, 24))
+[2020/06/29-23:33:27.377] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,365 DEBUG       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((6394, 56))
+[2020/06/29-23:33:27.380] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,365 DEBUG       target = <class 'pandas.core.series.Series'> ((6394,))
+[2020/06/29-23:33:27.381] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,379 INFO END -  Preprocessing train set
+[2020/06/29-23:33:27.382] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,379 INFO START -  Preprocessing test set
+[2020/06/29-23:33:27.382] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,379 INFO Set MF index len 2740
+[2020/06/29-23:33:27.383] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,382 DEBUG PROCESS WITH Step:RemapValueToOutput
+[2020/06/29-23:33:27.384] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,383 DEBUG PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/06/29-23:33:27.385] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,383 DEBUG MIMIFI: Imputing with map {u'Effective To Date_parsed': 3505323103.4094462, u'Monthly Premium Auto': 92.95886768845793, u'Total Claim Amount': 430.3417782649336, u'Number of Policies': 2.960118861432593, u'Number of Open Complaints': 0.38974038160775726, u'Months Since Last Claim': 15.120425398811385, u'Income': 37989.521895527054, u'Response': 0.13934939005317484, u'Months Since Policy Inception': 48.403659680950895}
+[2020/06/29-23:33:27.390] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,389 DEBUG PROCESS WITH Step:RescalingProcessor2 (Effective To Date_parsed)
+[2020/06/29-23:33:27.391] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,390 DEBUG   Rescale Effective To Date_parsed (avg=3505314029.78 std=1465841.77369 shift=3505323103.41 inv_scale=6.83475859096e-07)
+[2020/06/29-23:33:27.395] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,393 DEBUG   Rescaled Effective To Date_parsed (avg=-0.00620160598244 std=1.00186746557) nulls=0
+[2020/06/29-23:33:27.395] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,393 DEBUG PROCESS WITH Step:RescalingProcessor2 (Monthly Premium Auto)
+[2020/06/29-23:33:27.396] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,394 DEBUG   Rescale Monthly Premium Auto (avg=93.8270072993 std=35.0210076289 shift=92.9588676885 inv_scale=0.0292899954353)
+[2020/06/29-23:33:27.397] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,396 DEBUG   Rescaled Monthly Premium Auto (avg=0.0254278052379 std=1.02576515359) nulls=0
+[2020/06/29-23:33:27.397] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,396 DEBUG PROCESS WITH Step:RescalingProcessor2 (Income)
+[2020/06/29-23:33:27.398] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,397 DEBUG   Rescale Income (avg=36882.3014599 std=30210.9988787 shift=37989.5218955 inv_scale=3.28425403111e-05)
+[2020/06/29-23:33:27.401] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,399 DEBUG   Rescaled Income (avg=-0.0363639317918 std=0.992205948513) nulls=0
+[2020/06/29-23:33:27.402] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,399 DEBUG PROCESS WITH Step:RescalingProcessor2 (Total Claim Amount)
+[2020/06/29-23:33:27.404] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,400 DEBUG   Rescale Total Claim Amount (avg=442.832743441 std=288.884402506 shift=430.341778265 inv_scale=0.00343486978193)
+[2020/06/29-23:33:27.405] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,402 DEBUG   Rescaled Total Claim Amount (avg=0.0429048388299 std=0.992280304636) nulls=0
+[2020/06/29-23:33:27.406] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,403 DEBUG PROCESS WITH Step:RescalingProcessor2 (Response)
+[2020/06/29-23:33:27.406] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,403 DEBUG   Rescale Response (avg=0.152189781022 std=0.359270315079 shift=0.139349390053 inv_scale=2.8873541765)
+[2020/06/29-23:33:27.407] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,406 DEBUG   Rescaled Response (avg=0.0370747564914 std=1.03734064474) nulls=0
+[2020/06/29-23:33:27.408] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,406 DEBUG PROCESS WITH Step:RescalingProcessor2 (Months Since Last Claim)
+[2020/06/29-23:33:27.409] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,407 DEBUG   Rescale Months Since Last Claim (avg=15.0423357664 std=10.0532189031 shift=15.1204253988 inv_scale=0.0991814979783)
+[2020/06/29-23:33:27.411] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,410 DEBUG   Rescaled Months Since Last Claim (avg=-0.00774504671682 std=0.997093310317) nulls=0
+[2020/06/29-23:33:27.412] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,411 DEBUG PROCESS WITH Step:RescalingProcessor2 (Number of Policies)
+[2020/06/29-23:33:27.414] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,411 DEBUG   Rescale Number of Policies (avg=2.9802919708 std=2.39179379009 shift=2.96011886143 inv_scale=0.418470924684)
+[2020/06/29-23:33:27.418] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,415 DEBUG   Rescaled Number of Policies (avg=0.00844185973195 std=1.00089615899) nulls=0
+[2020/06/29-23:33:27.419] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,416 DEBUG PROCESS WITH Step:RescalingProcessor2 (Number of Open Complaints)
+[2020/06/29-23:33:27.421] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,416 DEBUG   Rescale Number of Open Complaints (avg=0.371897810219 std=0.892554929036 shift=0.389740381608 inv_scale=1.08940222516)
+[2020/06/29-23:33:27.427] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,426 DEBUG   Rescaled Number of Open Complaints (avg=-0.0194377369735 std=0.97235132577) nulls=0
+[2020/06/29-23:33:27.428] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,427 DEBUG PROCESS WITH Step:RescalingProcessor2 (Months Since Policy Inception)
+[2020/06/29-23:33:27.430] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,427 DEBUG   Rescale Months Since Policy Inception (avg=47.2733576642 std=27.5546405628 shift=48.403659681 inv_scale=0.0356499691132)
+[2020/06/29-23:33:27.430] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,430 DEBUG   Rescaled Months Since Policy Inception (avg=-0.0402952319846 std=0.982322084987) nulls=0
+[2020/06/29-23:33:27.431] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,430 DEBUG PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2020/06/29-23:33:27.432] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,431 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Vehicle Size)
+[2020/06/29-23:33:27.438] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,438 DEBUG Dummifier: Append a sparse block shape=(2740, 5) nnz=2740
+[2020/06/29-23:33:27.439] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,438 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Vehicle Class)
+[2020/06/29-23:33:27.449] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,446 DEBUG Dummifier: Append a sparse block shape=(2740, 8) nnz=2740
+[2020/06/29-23:33:27.449] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,446 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Gender)
+[2020/06/29-23:33:27.453] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,452 DEBUG Dummifier: Append a sparse block shape=(2740, 4) nnz=2740
+[2020/06/29-23:33:27.454] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,453 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (EmploymentStatus)
+[2020/06/29-23:33:27.461] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,460 DEBUG Dummifier: Append a sparse block shape=(2740, 7) nnz=2740
+[2020/06/29-23:33:27.462] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,461 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Sales Channel)
+[2020/06/29-23:33:27.469] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,468 DEBUG Dummifier: Append a sparse block shape=(2740, 6) nnz=2740
+[2020/06/29-23:33:27.470] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,468 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Marital Status)
+[2020/06/29-23:33:27.478] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,476 DEBUG Dummifier: Append a sparse block shape=(2740, 5) nnz=2740
+[2020/06/29-23:33:27.478] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,476 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Location Code)
+[2020/06/29-23:33:27.483] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,483 DEBUG Dummifier: Append a sparse block shape=(2740, 5) nnz=2740
+[2020/06/29-23:33:27.484] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,483 DEBUG PROCESS WITH Step:FastSparseDummifyProcessor (Education)
+[2020/06/29-23:33:27.490] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,490 DEBUG Dummifier: Append a sparse block shape=(2740, 7) nnz=2740
+[2020/06/29-23:33:27.491] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,490 DEBUG PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/06/29-23:33:27.493] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,490 DEBUG MIMIFI: Imputing with map {}
+[2020/06/29-23:33:27.494] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,491 DEBUG PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2020/06/29-23:33:27.495] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,491 DEBUG PROCESS WITH Step:MultipleImputeMissingFromInput
+[2020/06/29-23:33:27.495] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,491 DEBUG MIMIFI: Imputing with map {}
+[2020/06/29-23:33:27.496] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,491 DEBUG PROCESS WITH Step:FlushDFBuilder(interaction)
+[2020/06/29-23:33:27.497] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,491 DEBUG PROCESS WITH Step:RealignTarget
+[2020/06/29-23:33:27.498] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,491 DEBUG Realign target series = (2740,)
+[2020/06/29-23:33:27.498] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,492 DEBUG After realign target: (2740,)
+[2020/06/29-23:33:27.499] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,492 DEBUG PROCESS WITH Step:DropRowsWhereNoTarget
+[2020/06/29-23:33:27.500] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,493 DEBUG Deleting 0 rows because no target
+[2020/06/29-23:33:27.503] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,493 DEBUG MF before = (2740, 56) target before = (2740,)
+[2020/06/29-23:33:27.504] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,496 INFO MultiFrame, dropping rows: []
+[2020/06/29-23:33:27.513] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,513 DEBUG After DRWNT input_df=(2740, 24)
+[2020/06/29-23:33:27.525] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,520 DEBUG MF after = (2740, 56) target after = (2740,)
+[2020/06/29-23:33:27.525] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,520 DEBUG PROCESS WITH Step:DumpPipelineState
+[2020/06/29-23:33:27.529] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,520 DEBUG ********* Pipeline state (Before feature selection)
+[2020/06/29-23:33:27.529] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,520 DEBUG    input_df= (2740, 24) 
+[2020/06/29-23:33:27.530] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,521 DEBUG    current_mf=(2740, 56) 
+[2020/06/29-23:33:27.531] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,521 DEBUG    PPR: 
+[2020/06/29-23:33:27.532] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,521 DEBUG       target = <class 'pandas.core.series.Series'> ((2740,))
+[2020/06/29-23:33:27.532] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,521 DEBUG PROCESS WITH Step:EmitCurrentMFAsResult
+[2020/06/29-23:33:27.533] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,521 INFO Set MF index len 2740
+[2020/06/29-23:33:27.534] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,521 DEBUG PROCESS WITH Step:DumpPipelineState
+[2020/06/29-23:33:27.535] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,521 DEBUG ********* Pipeline state (At end)
+[2020/06/29-23:33:27.535] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,521 DEBUG    input_df= (2740, 24) 
+[2020/06/29-23:33:27.536] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,521 DEBUG    current_mf=(0, 0) 
+[2020/06/29-23:33:27.538] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,521 DEBUG    PPR: 
+[2020/06/29-23:33:27.538] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,522 DEBUG       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((2740, 24))
+[2020/06/29-23:33:27.539] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,522 DEBUG       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((2740, 56))
+[2020/06/29-23:33:27.540] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,522 DEBUG       target = <class 'pandas.core.series.Series'> ((2740,))
+[2020/06/29-23:33:27.541] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,522 INFO END -  Preprocessing test set
+[2020/06/29-23:33:27.541] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,522 INFO START -  Grid searching
+[2020/06/29-23:33:27.545] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,528 DEBUG Deleting 0 rows
+[2020/06/29-23:33:27.545] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,528 INFO MultiFrame, dropping rows: []
+[2020/06/29-23:33:27.550] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,549 INFO prepare multiframe shape=(6394,56) tn=358064 nnz=108698 fill_ratio=0.30
+[2020/06/29-23:33:27.550] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,549 INFO too small, using array
+[2020/06/29-23:33:27.559] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,558 INFO Create CLF from params: {u'computeLearningCurves': False, u'rf_regressor_grid': {u'n_jobs': 1, u'max_tree_depth': {u'gridMode': u'EXPLICIT', u'values': [6, 14], u'nValues': 0}, u'selection_mode': u'auto', u'enabled': True, u'min_samples_leaf': {u'gridMode': u'EXPLICIT', u'values': [7], u'nValues': 0}, u'n_estimators': {u'gridMode': u'EXPLICIT', u'values': [100], u'nValues': 0}, u'max_feature_prop': 0.3, u'max_features': {u'gridMode': u'EXPLICIT', u'values': [5], u'nValues': 0}}, u'algorithm': u'RANDOM_FOREST_REGRESSION', u'grid_search_params': {u'nIter': 0, u'nJobs': 4, u'strategy': u'GRID', u'randomized': True, u'shuffleIterations': 1, u'mode': u'KFOLD', u'timeout': 0, u'splitRatio': 0.8, u'nFolds': 3, u'stratified': True}, u'autoOptimizeThreshold': True, u'gridLength': 2, u'metrics': {u'customEvaluationMetricNeedsProba': False, u'evaluationMetric': u'R2', u'liftPoint': 0.4, u'costMatrixWeights': {u'fnGain': 0.0, u'tpGain': 1.0, u'tnGain': 0.0, u'fpGain': -0.3}, u'customEvaluationMetricGIB': True}, u'forcedClassifierThreshold': 0.0, u'skipExpensiveReports': False, u'max_ensemble_nodes_serialized': 6000, u'pluginAlgoCustomGridSearch': False} for algorithm RANDOM_FOREST_REGRESSION
+[2020/06/29-23:33:27.560] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,559 INFO Using K-Fold CV with k=3
+[2020/06/29-23:33:27.562] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,561 INFO Building Gridsearcher for hyperparameters space: <dataiku.doctor.prediction.common.TreesHyperparametersSpace object at 0x11d47a690>
+[2020/06/29-23:33:27.566] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,565 INFO Fitting 3 folds for each of 2 candidates, totalling 6 fits
+[2020/06/29-23:33:27.571] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=4)]: Using backend ThreadingBackend with 4 concurrent workers.
+[2020/06/29-23:33:27.587] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,587 INFO Fit  p=1 s=0: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=14, min_samples_leaf=7 
+[2020/06/29-23:33:27.702] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,702 INFO Fit  p=1 s=1: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=14, min_samples_leaf=7 
+[2020/06/29-23:33:27.732] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,732 INFO Fit  p=1 s=2: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=14, min_samples_leaf=7 
+[2020/06/29-23:33:27.761] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:27,761 INFO Fit  p=0 s=0: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=6, min_samples_leaf=7 
+[2020/06/29-23:33:29.071] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:29.072] [null-out-38] [INFO] [dku.utils]  - building tree 1 of 100
+[2020/06/29-23:33:29.164] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:29.166] [null-out-38] [INFO] [dku.utils]  - building tree 1 of 100
+[2020/06/29-23:33:29.216] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s remaining:    0.0s
+[2020/06/29-23:33:29.216] [null-out-38] [INFO] [dku.utils]  - building tree 2 of 100
+[2020/06/29-23:33:29.248] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s remaining:    0.0s
+[2020/06/29-23:33:29.249] [null-out-38] [INFO] [dku.utils]  - building tree 2 of 100
+[2020/06/29-23:33:29.286] [null-out-38] [INFO] [dku.utils]  - building tree 3 of 100
+[2020/06/29-23:33:29.326] [null-out-38] [INFO] [dku.utils]  - building tree 3 of 100
+[2020/06/29-23:33:29.385] [null-out-38] [INFO] [dku.utils]  - building tree 4 of 100
+[2020/06/29-23:33:29.398] [null-out-38] [INFO] [dku.utils]  - building tree 4 of 100
+[2020/06/29-23:33:29.421] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:29.421] [null-out-38] [INFO] [dku.utils]  - building tree 1 of 100
+[2020/06/29-23:33:29.438] [null-out-38] [INFO] [dku.utils]  - building tree 5 of 100
+[2020/06/29-23:33:29.451] [null-out-38] [INFO] [dku.utils]  - building tree 5 of 100
+[2020/06/29-23:33:29.467] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:29.471] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:29.471] [null-out-38] [INFO] [dku.utils]  - building tree 1 of 100building tree 2 of 100
+[2020/06/29-23:33:29.480] [null-out-38] [INFO] [dku.utils]  - building tree 6 of 100
+[2020/06/29-23:33:29.495] [null-out-38] [INFO] [dku.utils]  - building tree 6 of 100
+[2020/06/29-23:33:29.503] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:29.504] [null-out-38] [INFO] [dku.utils]  - building tree 2 of 100
+[2020/06/29-23:33:29.515] [null-out-38] [INFO] [dku.utils]  - building tree 7 of 100
+[2020/06/29-23:33:29.518] [null-out-38] [INFO] [dku.utils]  - building tree 3 of 100
+[2020/06/29-23:33:29.531] [null-out-38] [INFO] [dku.utils]  - building tree 3 of 100
+[2020/06/29-23:33:29.538] [null-out-38] [INFO] [dku.utils]  - building tree 7 of 100
+[2020/06/29-23:33:29.566] [null-out-38] [INFO] [dku.utils]  - building tree 4 of 100
+[2020/06/29-23:33:29.586] [null-out-38] [INFO] [dku.utils]  - building tree 4 of 100
+[2020/06/29-23:33:29.597] [null-out-38] [INFO] [dku.utils]  - building tree 5 of 100
+[2020/06/29-23:33:29.602] [null-out-38] [INFO] [dku.utils]  - building tree 8 of 100
+[2020/06/29-23:33:29.613] [null-out-38] [INFO] [dku.utils]  - building tree 8 of 100
+[2020/06/29-23:33:29.632] [null-out-38] [INFO] [dku.utils]  - building tree 5 of 100
+[2020/06/29-23:33:29.634] [null-out-38] [INFO] [dku.utils]  - building tree 6 of 100
+[2020/06/29-23:33:29.639] [null-out-38] [INFO] [dku.utils]  - building tree 9 of 100
+[2020/06/29-23:33:29.649] [null-out-38] [INFO] [dku.utils]  - building tree 9 of 100
+[2020/06/29-23:33:29.666] [null-out-38] [INFO] [dku.utils]  - building tree 7 of 100
+[2020/06/29-23:33:29.676] [null-out-38] [INFO] [dku.utils]  - building tree 6 of 100
+[2020/06/29-23:33:29.680] [null-out-38] [INFO] [dku.utils]  - building tree 10 of 100
+[2020/06/29-23:33:29.688] [null-out-38] [INFO] [dku.utils]  - building tree 10 of 100
+[2020/06/29-23:33:29.704] [null-out-38] [INFO] [dku.utils]  - building tree 8 of 100
+[2020/06/29-23:33:29.707] [null-out-38] [INFO] [dku.utils]  - building tree 7 of 100
+[2020/06/29-23:33:29.710] [null-out-38] [INFO] [dku.utils]  - building tree 11 of 100
+[2020/06/29-23:33:29.720] [null-out-38] [INFO] [dku.utils]  - building tree 11 of 100
+[2020/06/29-23:33:29.726] [null-out-38] [INFO] [dku.utils]  - building tree 9 of 100
+[2020/06/29-23:33:29.742] [null-out-38] [INFO] [dku.utils]  - building tree 8 of 100
+[2020/06/29-23:33:29.749] [null-out-38] [INFO] [dku.utils]  - building tree 12 of 100
+[2020/06/29-23:33:29.753] [null-out-38] [INFO] [dku.utils]  - building tree 10 of 100
+[2020/06/29-23:33:29.759] [null-out-38] [INFO] [dku.utils]  - building tree 12 of 100
+[2020/06/29-23:33:29.774] [null-out-38] [INFO] [dku.utils]  - building tree 11 of 100
+[2020/06/29-23:33:29.780] [null-out-38] [INFO] [dku.utils]  - building tree 13 of 100
+[2020/06/29-23:33:29.786] [null-out-38] [INFO] [dku.utils]  - building tree 9 of 100
+[2020/06/29-23:33:29.791] [null-out-38] [INFO] [dku.utils]  - building tree 13 of 100
+[2020/06/29-23:33:29.791] [null-out-38] [INFO] [dku.utils]  - building tree 12 of 100
+[2020/06/29-23:33:29.811] [null-out-38] [INFO] [dku.utils]  - building tree 13 of 100
+[2020/06/29-23:33:29.814] [null-out-38] [INFO] [dku.utils]  - building tree 10 of 100
+[2020/06/29-23:33:29.824] [null-out-38] [INFO] [dku.utils]  - building tree 14 of 100
+[2020/06/29-23:33:29.829] [null-out-38] [INFO] [dku.utils]  - building tree 14 of 100
+[2020/06/29-23:33:29.909] [null-out-38] [INFO] [dku.utils]  - building tree 14 of 100
+[2020/06/29-23:33:29.941] [null-out-38] [INFO] [dku.utils]  - building tree 15 of 100
+[2020/06/29-23:33:29.992] [null-out-38] [INFO] [dku.utils]  - building tree 11 of 100
+[2020/06/29-23:33:30.004] [null-out-38] [INFO] [dku.utils]  - building tree 15 of 100
+[2020/06/29-23:33:30.005] [null-out-38] [INFO] [dku.utils]  - building tree 15 of 100
+[2020/06/29-23:33:30.027] [null-out-38] [INFO] [dku.utils]  - building tree 16 of 100
+[2020/06/29-23:33:30.033] [null-out-38] [INFO] [dku.utils]  - building tree 12 of 100
+[2020/06/29-23:33:30.037] [null-out-38] [INFO] [dku.utils]  - building tree 16 of 100
+[2020/06/29-23:33:30.049] [null-out-38] [INFO] [dku.utils]  - building tree 16 of 100
+[2020/06/29-23:33:30.060] [null-out-38] [INFO] [dku.utils]  - building tree 17 of 100
+[2020/06/29-23:33:30.076] [null-out-38] [INFO] [dku.utils]  - building tree 13 of 100
+[2020/06/29-23:33:30.079] [null-out-38] [INFO] [dku.utils]  - building tree 17 of 100
+[2020/06/29-23:33:30.082] [null-out-38] [INFO] [dku.utils]  - building tree 17 of 100
+[2020/06/29-23:33:30.086] [null-out-38] [INFO] [dku.utils]  - building tree 18 of 100
+[2020/06/29-23:33:30.107] [null-out-38] [INFO] [dku.utils]  - building tree 14 of 100
+[2020/06/29-23:33:30.112] [null-out-38] [INFO] [dku.utils]  - building tree 18 of 100
+[2020/06/29-23:33:30.114] [null-out-38] [INFO] [dku.utils]  - building tree 19 of 100
+[2020/06/29-23:33:30.120] [null-out-38] [INFO] [dku.utils]  - building tree 18 of 100
+[2020/06/29-23:33:30.133] [null-out-38] [INFO] [dku.utils]  - building tree 20 of 100
+[2020/06/29-23:33:30.147] [null-out-38] [INFO] [dku.utils]  - building tree 15 of 100
+[2020/06/29-23:33:30.149] [null-out-38] [INFO] [dku.utils]  - building tree 19 of 100
+[2020/06/29-23:33:30.154] [null-out-38] [INFO] [dku.utils]  - building tree 19 of 100
+[2020/06/29-23:33:30.178] [null-out-38] [INFO] [dku.utils]  - building tree 21 of 100
+[2020/06/29-23:33:30.195] [null-out-38] [INFO] [dku.utils]  - building tree 16 of 100
+[2020/06/29-23:33:30.197] [null-out-38] [INFO] [dku.utils]  - building tree 20 of 100
+[2020/06/29-23:33:30.202] [null-out-38] [INFO] [dku.utils]  - building tree 20 of 100
+[2020/06/29-23:33:30.214] [null-out-38] [INFO] [dku.utils]  - building tree 22 of 100
+[2020/06/29-23:33:30.239] [null-out-38] [INFO] [dku.utils]  - building tree 23 of 100
+[2020/06/29-23:33:30.245] [null-out-38] [INFO] [dku.utils]  - building tree 21 of 100
+[2020/06/29-23:33:30.247] [null-out-38] [INFO] [dku.utils]  - building tree 17 of 100
+[2020/06/29-23:33:30.250] [null-out-38] [INFO] [dku.utils]  - building tree 21 of 100
+[2020/06/29-23:33:30.261] [null-out-38] [INFO] [dku.utils]  - building tree 24 of 100
+[2020/06/29-23:33:30.284] [null-out-38] [INFO] [dku.utils]  - building tree 18 of 100
+[2020/06/29-23:33:30.292] [null-out-38] [INFO] [dku.utils]  - building tree 22 of 100
+[2020/06/29-23:33:30.295] [null-out-38] [INFO] [dku.utils]  - building tree 22 of 100
+[2020/06/29-23:33:30.310] [null-out-38] [INFO] [dku.utils]  - building tree 25 of 100
+[2020/06/29-23:33:30.355] [null-out-38] [INFO] [dku.utils]  - building tree 23 of 100
+[2020/06/29-23:33:30.364] [null-out-38] [INFO] [dku.utils]  - building tree 19 of 100
+[2020/06/29-23:33:30.426] [null-out-38] [INFO] [dku.utils]  - building tree 26 of 100
+[2020/06/29-23:33:30.435] [null-out-38] [INFO] [dku.utils]  - building tree 23 of 100
+[2020/06/29-23:33:30.555] [null-out-38] [INFO] [dku.utils]  - building tree 27 of 100
+[2020/06/29-23:33:30.569] [null-out-38] [INFO] [dku.utils]  - building tree 20 of 100
+[2020/06/29-23:33:30.574] [null-out-38] [INFO] [dku.utils]  - building tree 24 of 100
+[2020/06/29-23:33:30.581] [null-out-38] [INFO] [dku.utils]  - building tree 28 of 100
+[2020/06/29-23:33:30.614] [null-out-38] [INFO] [dku.utils]  - building tree 24 of 100
+[2020/06/29-23:33:30.682] [null-out-38] [INFO] [dku.utils]  - building tree 29 of 100
+[2020/06/29-23:33:30.747] [null-out-38] [INFO] [dku.utils]  - building tree 21 of 100
+[2020/06/29-23:33:30.758] [null-out-38] [INFO] [dku.utils]  - building tree 25 of 100
+[2020/06/29-23:33:30.819] [null-out-38] [INFO] [dku.utils]  - building tree 25 of 100
+[2020/06/29-23:33:30.832] [null-out-38] [INFO] [dku.utils]  - building tree 30 of 100
+[2020/06/29-23:33:30.852] [null-out-38] [INFO] [dku.utils]  - building tree 26 of 100
+[2020/06/29-23:33:30.852] [null-out-38] [INFO] [dku.utils]  - building tree 26 of 100
+[2020/06/29-23:33:30.854] [null-out-38] [INFO] [dku.utils]  - building tree 22 of 100
+[2020/06/29-23:33:30.863] [null-out-38] [INFO] [dku.utils]  - building tree 31 of 100
+[2020/06/29-23:33:30.898] [null-out-38] [INFO] [dku.utils]  - building tree 32 of 100
+[2020/06/29-23:33:30.900] [null-out-38] [INFO] [dku.utils]  - building tree 23 of 100
+[2020/06/29-23:33:30.901] [null-out-38] [INFO] [dku.utils]  - building tree 27 of 100
+[2020/06/29-23:33:30.913] [null-out-38] [INFO] [dku.utils]  - building tree 27 of 100
+[2020/06/29-23:33:30.925] [null-out-38] [INFO] [dku.utils]  - building tree 33 of 100
+[2020/06/29-23:33:30.936] [null-out-38] [INFO] [dku.utils]  - building tree 28 of 100
+[2020/06/29-23:33:30.945] [null-out-38] [INFO] [dku.utils]  - building tree 24 of 100
+[2020/06/29-23:33:30.946] [null-out-38] [INFO] [dku.utils]  - building tree 28 of 100
+[2020/06/29-23:33:30.964] [null-out-38] [INFO] [dku.utils]  - building tree 34 of 100
+[2020/06/29-23:33:30.986] [null-out-38] [INFO] [dku.utils]  - building tree 29 of 100
+[2020/06/29-23:33:30.992] [null-out-38] [INFO] [dku.utils]  - building tree 29 of 100
+[2020/06/29-23:33:30.996] [null-out-38] [INFO] [dku.utils]  - building tree 25 of 100
+[2020/06/29-23:33:31.001] [null-out-38] [INFO] [dku.utils]  - building tree 35 of 100
+[2020/06/29-23:33:31.026] [null-out-38] [INFO] [dku.utils]  - building tree 36 of 100
+[2020/06/29-23:33:31.039] [null-out-38] [INFO] [dku.utils]  - building tree 26 of 100
+[2020/06/29-23:33:31.042] [null-out-38] [INFO] [dku.utils]  - building tree 30 of 100
+[2020/06/29-23:33:31.057] [null-out-38] [INFO] [dku.utils]  - building tree 30 of 100
+[2020/06/29-23:33:31.067] [null-out-38] [INFO] [dku.utils]  - building tree 37 of 100
+[2020/06/29-23:33:31.082] [null-out-38] [INFO] [dku.utils]  - building tree 31 of 100
+[2020/06/29-23:33:31.089] [null-out-38] [INFO] [dku.utils]  - building tree 38 of 100
+[2020/06/29-23:33:31.095] [null-out-38] [INFO] [dku.utils]  - building tree 31 of 100
+[2020/06/29-23:33:31.097] [null-out-38] [INFO] [dku.utils]  - building tree 27 of 100
+[2020/06/29-23:33:31.106] [null-out-38] [INFO] [dku.utils]  - building tree 39 of 100
+[2020/06/29-23:33:31.116] [null-out-38] [INFO] [dku.utils]  - building tree 32 of 100
+[2020/06/29-23:33:31.127] [null-out-38] [INFO] [dku.utils]  - building tree 32 of 100
+[2020/06/29-23:33:31.128] [null-out-38] [INFO] [dku.utils]  - building tree 28 of 100
+[2020/06/29-23:33:31.130] [null-out-38] [INFO] [dku.utils]  - building tree 40 of 100
+[2020/06/29-23:33:31.154] [null-out-38] [INFO] [dku.utils]  - building tree 41 of 100
+[2020/06/29-23:33:31.155] [null-out-38] [INFO] [dku.utils]  - building tree 33 of 100
+[2020/06/29-23:33:31.159] [null-out-38] [INFO] [dku.utils]  - building tree 33 of 100
+[2020/06/29-23:33:31.168] [null-out-38] [INFO] [dku.utils]  - building tree 29 of 100
+[2020/06/29-23:33:31.191] [null-out-38] [INFO] [dku.utils]  - building tree 34 of 100
+[2020/06/29-23:33:31.192] [null-out-38] [INFO] [dku.utils]  - building tree 42 of 100
+[2020/06/29-23:33:31.194] [null-out-38] [INFO] [dku.utils]  - building tree 30 of 100
+[2020/06/29-23:33:31.203] [null-out-38] [INFO] [dku.utils]  - building tree 34 of 100
+[2020/06/29-23:33:31.217] [null-out-38] [INFO] [dku.utils]  - building tree 43 of 100
+[2020/06/29-23:33:31.232] [null-out-38] [INFO] [dku.utils]  - building tree 31 of 100
+[2020/06/29-23:33:31.233] [null-out-38] [INFO] [dku.utils]  - building tree 35 of 100
+[2020/06/29-23:33:31.236] [null-out-38] [INFO] [dku.utils]  - building tree 44 of 100
+[2020/06/29-23:33:31.240] [null-out-38] [INFO] [dku.utils]  - building tree 35 of 100
+[2020/06/29-23:33:31.258] [null-out-38] [INFO] [dku.utils]  - building tree 45 of 100
+[2020/06/29-23:33:31.267] [null-out-38] [INFO] [dku.utils]  - building tree 36 of 100
+[2020/06/29-23:33:31.274] [null-out-38] [INFO] [dku.utils]  - building tree 32 of 100
+[2020/06/29-23:33:31.283] [null-out-38] [INFO] [dku.utils]  - building tree 36 of 100
+[2020/06/29-23:33:31.298] [null-out-38] [INFO] [dku.utils]  - building tree 46 of 100
+[2020/06/29-23:33:31.322] [null-out-38] [INFO] [dku.utils]  - building tree 37 of 100
+[2020/06/29-23:33:31.324] [null-out-38] [INFO] [dku.utils]  - building tree 37 of 100
+[2020/06/29-23:33:31.336] [null-out-38] [INFO] [dku.utils]  - building tree 33 of 100
+[2020/06/29-23:33:31.339] [null-out-38] [INFO] [dku.utils]  - building tree 47 of 100
+[2020/06/29-23:33:31.358] [null-out-38] [INFO] [dku.utils]  - building tree 48 of 100
+[2020/06/29-23:33:31.359] [null-out-38] [INFO] [dku.utils]  - building tree 38 of 100
+[2020/06/29-23:33:31.363] [null-out-38] [INFO] [dku.utils]  - building tree 34 of 100
+[2020/06/29-23:33:31.373] [null-out-38] [INFO] [dku.utils]  - building tree 38 of 100
+[2020/06/29-23:33:31.380] [null-out-38] [INFO] [dku.utils]  - building tree 49 of 100
+[2020/06/29-23:33:31.401] [null-out-38] [INFO] [dku.utils]  - building tree 39 of 100
+[2020/06/29-23:33:31.404] [null-out-38] [INFO] [dku.utils]  - building tree 35 of 100
+[2020/06/29-23:33:31.407] [null-out-38] [INFO] [dku.utils]  - building tree 39 of 100
+[2020/06/29-23:33:31.409] [null-out-38] [INFO] [dku.utils]  - building tree 50 of 100
+[2020/06/29-23:33:31.436] [null-out-38] [INFO] [dku.utils]  - building tree 51 of 100
+[2020/06/29-23:33:31.447] [null-out-38] [INFO] [dku.utils]  - building tree 40 of 100
+[2020/06/29-23:33:31.449] [null-out-38] [INFO] [dku.utils]  - building tree 40 of 100
+[2020/06/29-23:33:31.453] [null-out-38] [INFO] [dku.utils]  - building tree 36 of 100
+[2020/06/29-23:33:31.460] [null-out-38] [INFO] [dku.utils]  - building tree 52 of 100
+[2020/06/29-23:33:31.477] [null-out-38] [INFO] [dku.utils]  - building tree 37 of 100
+[2020/06/29-23:33:31.479] [null-out-38] [INFO] [dku.utils]  - building tree 41 of 100
+[2020/06/29-23:33:31.481] [null-out-38] [INFO] [dku.utils]  - building tree 41 of 100
+[2020/06/29-23:33:31.483] [null-out-38] [INFO] [dku.utils]  - building tree 53 of 100
+[2020/06/29-23:33:31.504] [null-out-38] [INFO] [dku.utils]  - building tree 54 of 100
+[2020/06/29-23:33:31.513] [null-out-38] [INFO] [dku.utils]  - building tree 42 of 100
+[2020/06/29-23:33:31.518] [null-out-38] [INFO] [dku.utils]  - building tree 42 of 100
+[2020/06/29-23:33:31.526] [null-out-38] [INFO] [dku.utils]  - building tree 38 of 100
+[2020/06/29-23:33:31.537] [null-out-38] [INFO] [dku.utils]  - building tree 55 of 100
+[2020/06/29-23:33:31.541] [null-out-38] [INFO] [dku.utils]  - building tree 43 of 100
+[2020/06/29-23:33:31.552] [null-out-38] [INFO] [dku.utils]  - building tree 56 of 100
+[2020/06/29-23:33:31.559] [null-out-38] [INFO] [dku.utils]  - building tree 39 of 100
+[2020/06/29-23:33:31.560] [null-out-38] [INFO] [dku.utils]  - building tree 43 of 100
+[2020/06/29-23:33:31.583] [null-out-38] [INFO] [dku.utils]  - building tree 44 of 100
+[2020/06/29-23:33:31.584] [null-out-38] [INFO] [dku.utils]  - building tree 57 of 100
+[2020/06/29-23:33:31.587] [null-out-38] [INFO] [dku.utils]  - building tree 44 of 100
+[2020/06/29-23:33:31.601] [null-out-38] [INFO] [dku.utils]  - building tree 40 of 100
+[2020/06/29-23:33:31.602] [null-out-38] [INFO] [dku.utils]  - building tree 58 of 100
+[2020/06/29-23:33:31.618] [null-out-38] [INFO] [dku.utils]  - building tree 45 of 100
+[2020/06/29-23:33:31.625] [null-out-38] [INFO] [dku.utils]  - building tree 59 of 100
+[2020/06/29-23:33:31.628] [null-out-38] [INFO] [dku.utils]  - building tree 41 of 100
+[2020/06/29-23:33:31.631] [null-out-38] [INFO] [dku.utils]  - building tree 45 of 100
+[2020/06/29-23:33:31.649] [null-out-38] [INFO] [dku.utils]  - building tree 46 of 100
+[2020/06/29-23:33:31.651] [null-out-38] [INFO] [dku.utils]  - building tree 60 of 100
+[2020/06/29-23:33:31.659] [null-out-38] [INFO] [dku.utils]  - building tree 46 of 100
+[2020/06/29-23:33:31.671] [null-out-38] [INFO] [dku.utils]  - building tree 42 of 100
+[2020/06/29-23:33:31.674] [null-out-38] [INFO] [dku.utils]  - building tree 61 of 100
+[2020/06/29-23:33:31.690] [null-out-38] [INFO] [dku.utils]  - building tree 47 of 100
+[2020/06/29-23:33:31.696] [null-out-38] [INFO] [dku.utils]  - building tree 47 of 100
+[2020/06/29-23:33:31.702] [null-out-38] [INFO] [dku.utils]  - building tree 43 of 100
+[2020/06/29-23:33:31.703] [null-out-38] [INFO] [dku.utils]  - building tree 62 of 100
+[2020/06/29-23:33:31.721] [null-out-38] [INFO] [dku.utils]  - building tree 63 of 100
+[2020/06/29-23:33:31.723] [null-out-38] [INFO] [dku.utils]  - building tree 48 of 100
+[2020/06/29-23:33:31.739] [null-out-38] [INFO] [dku.utils]  - building tree 48 of 100
+[2020/06/29-23:33:31.745] [null-out-38] [INFO] [dku.utils]  - building tree 44 of 100
+[2020/06/29-23:33:31.754] [null-out-38] [INFO] [dku.utils]  - building tree 64 of 100
+[2020/06/29-23:33:31.767] [null-out-38] [INFO] [dku.utils]  - building tree 49 of 100
+[2020/06/29-23:33:31.774] [null-out-38] [INFO] [dku.utils]  - building tree 45 of 100
+[2020/06/29-23:33:31.777] [null-out-38] [INFO] [dku.utils]  - building tree 49 of 100
+[2020/06/29-23:33:31.793] [null-out-38] [INFO] [dku.utils]  - building tree 65 of 100
+[2020/06/29-23:33:31.798] [null-out-38] [INFO] [dku.utils]  - building tree 50 of 100
+[2020/06/29-23:33:31.803] [null-out-38] [INFO] [dku.utils]  - building tree 50 of 100
+[2020/06/29-23:33:31.809] [null-out-38] [INFO] [dku.utils]  - building tree 46 of 100
+[2020/06/29-23:33:31.810] [null-out-38] [INFO] [dku.utils]  - building tree 66 of 100
+[2020/06/29-23:33:31.827] [null-out-38] [INFO] [dku.utils]  - building tree 51 of 100
+[2020/06/29-23:33:31.831] [null-out-38] [INFO] [dku.utils]  - building tree 51 of 100
+[2020/06/29-23:33:31.843] [null-out-38] [INFO] [dku.utils]  - building tree 67 of 100
+[2020/06/29-23:33:31.851] [null-out-38] [INFO] [dku.utils]  - building tree 47 of 100
+[2020/06/29-23:33:31.867] [null-out-38] [INFO] [dku.utils]  - building tree 52 of 100
+[2020/06/29-23:33:31.870] [null-out-38] [INFO] [dku.utils]  - building tree 68 of 100
+[2020/06/29-23:33:31.884] [null-out-38] [INFO] [dku.utils]  - building tree 48 of 100
+[2020/06/29-23:33:31.886] [null-out-38] [INFO] [dku.utils]  - building tree 52 of 100
+[2020/06/29-23:33:31.890] [null-out-38] [INFO] [dku.utils]  - building tree 69 of 100
+[2020/06/29-23:33:31.904] [null-out-38] [INFO] [dku.utils]  - building tree 53 of 100
+[2020/06/29-23:33:31.907] [null-out-38] [INFO] [dku.utils]  - building tree 70 of 100
+[2020/06/29-23:33:31.914] [null-out-38] [INFO] [dku.utils]  - building tree 53 of 100
+[2020/06/29-23:33:31.934] [null-out-38] [INFO] [dku.utils]  - building tree 49 of 100
+[2020/06/29-23:33:31.937] [null-out-38] [INFO] [dku.utils]  - building tree 71 of 100
+[2020/06/29-23:33:31.955] [null-out-38] [INFO] [dku.utils]  - building tree 54 of 100
+[2020/06/29-23:33:31.958] [null-out-38] [INFO] [dku.utils]  - building tree 54 of 100
+[2020/06/29-23:33:31.961] [null-out-38] [INFO] [dku.utils]  - building tree 72 of 100
+[2020/06/29-23:33:31.970] [null-out-38] [INFO] [dku.utils]  - building tree 50 of 100
+[2020/06/29-23:33:31.981] [null-out-38] [INFO] [dku.utils]  - building tree 73 of 100
+[2020/06/29-23:33:31.989] [null-out-38] [INFO] [dku.utils]  - building tree 55 of 100
+[2020/06/29-23:33:31.997] [null-out-38] [INFO] [dku.utils]  - building tree 55 of 100
+[2020/06/29-23:33:32.001] [null-out-38] [INFO] [dku.utils]  - building tree 51 of 100
+[2020/06/29-23:33:32.008] [null-out-38] [INFO] [dku.utils]  - building tree 74 of 100
+[2020/06/29-23:33:32.029] [null-out-38] [INFO] [dku.utils]  - building tree 56 of 100
+[2020/06/29-23:33:32.030] [null-out-38] [INFO] [dku.utils]  - building tree 52 of 100
+[2020/06/29-23:33:32.032] [null-out-38] [INFO] [dku.utils]  - building tree 56 of 100
+[2020/06/29-23:33:32.034] [null-out-38] [INFO] [dku.utils]  - building tree 75 of 100
+[2020/06/29-23:33:32.051] [null-out-38] [INFO] [dku.utils]  - building tree 76 of 100
+[2020/06/29-23:33:32.059] [null-out-38] [INFO] [dku.utils]  - building tree 57 of 100
+[2020/06/29-23:33:32.069] [null-out-38] [INFO] [dku.utils]  - building tree 57 of 100
+[2020/06/29-23:33:32.070] [null-out-38] [INFO] [dku.utils]  - building tree 53 of 100
+[2020/06/29-23:33:32.076] [null-out-38] [INFO] [dku.utils]  - building tree 77 of 100
+[2020/06/29-23:33:32.094] [null-out-38] [INFO] [dku.utils]  - building tree 58 of 100
+[2020/06/29-23:33:32.096] [null-out-38] [INFO] [dku.utils]  - building tree 78 of 100
+[2020/06/29-23:33:32.102] [null-out-38] [INFO] [dku.utils]  - building tree 54 of 100
+[2020/06/29-23:33:32.105] [null-out-38] [INFO] [dku.utils]  - building tree 58 of 100
+[2020/06/29-23:33:32.121] [null-out-38] [INFO] [dku.utils]  - building tree 79 of 100
+[2020/06/29-23:33:32.124] [null-out-38] [INFO] [dku.utils]  - building tree 59 of 100
+[2020/06/29-23:33:32.133] [null-out-38] [INFO] [dku.utils]  - building tree 59 of 100
+[2020/06/29-23:33:32.141] [null-out-38] [INFO] [dku.utils]  - building tree 80 of 100
+[2020/06/29-23:33:32.144] [null-out-38] [INFO] [dku.utils]  - building tree 55 of 100
+[2020/06/29-23:33:32.174] [null-out-38] [INFO] [dku.utils]  - building tree 60 of 100
+[2020/06/29-23:33:32.182] [null-out-38] [INFO] [dku.utils]  - building tree 81 of 100
+[2020/06/29-23:33:32.187] [null-out-38] [INFO] [dku.utils]  - building tree 60 of 100
+[2020/06/29-23:33:32.203] [null-out-38] [INFO] [dku.utils]  - building tree 56 of 100
+[2020/06/29-23:33:32.214] [null-out-38] [INFO] [dku.utils]  - building tree 61 of 100
+[2020/06/29-23:33:32.215] [null-out-38] [INFO] [dku.utils]  - building tree 61 of 100
+[2020/06/29-23:33:32.220] [null-out-38] [INFO] [dku.utils]  - building tree 82 of 100
+[2020/06/29-23:33:32.234] [null-out-38] [INFO] [dku.utils]  - building tree 57 of 100
+[2020/06/29-23:33:32.246] [null-out-38] [INFO] [dku.utils]  - building tree 83 of 100
+[2020/06/29-23:33:32.250] [null-out-38] [INFO] [dku.utils]  - building tree 62 of 100
+[2020/06/29-23:33:32.269] [null-out-38] [INFO] [dku.utils]  - building tree 62 of 100
+[2020/06/29-23:33:32.271] [null-out-38] [INFO] [dku.utils]  - building tree 58 of 100
+[2020/06/29-23:33:32.282] [null-out-38] [INFO] [dku.utils]  - building tree 84 of 100
+[2020/06/29-23:33:32.300] [null-out-38] [INFO] [dku.utils]  - building tree 63 of 100
+[2020/06/29-23:33:32.305] [null-out-38] [INFO] [dku.utils]  - building tree 63 of 100
+[2020/06/29-23:33:32.308] [null-out-38] [INFO] [dku.utils]  - building tree 85 of 100
+[2020/06/29-23:33:32.320] [null-out-38] [INFO] [dku.utils]  - building tree 59 of 100
+[2020/06/29-23:33:32.328] [null-out-38] [INFO] [dku.utils]  - building tree 86 of 100
+[2020/06/29-23:33:32.337] [null-out-38] [INFO] [dku.utils]  - building tree 64 of 100
+[2020/06/29-23:33:32.344] [null-out-38] [INFO] [dku.utils]  - building tree 64 of 100
+[2020/06/29-23:33:32.355] [null-out-38] [INFO] [dku.utils]  - building tree 87 of 100
+[2020/06/29-23:33:32.364] [null-out-38] [INFO] [dku.utils]  - building tree 60 of 100
+[2020/06/29-23:33:32.387] [null-out-38] [INFO] [dku.utils]  - building tree 65 of 100
+[2020/06/29-23:33:32.395] [null-out-38] [INFO] [dku.utils]  - building tree 88 of 100
+[2020/06/29-23:33:32.398] [null-out-38] [INFO] [dku.utils]  - building tree 65 of 100
+[2020/06/29-23:33:32.421] [null-out-38] [INFO] [dku.utils]  - building tree 61 of 100
+[2020/06/29-23:33:32.424] [null-out-38] [INFO] [dku.utils]  - building tree 89 of 100
+[2020/06/29-23:33:32.425] [null-out-38] [INFO] [dku.utils]  - building tree 66 of 100
+[2020/06/29-23:33:32.433] [null-out-38] [INFO] [dku.utils]  - building tree 66 of 100
+[2020/06/29-23:33:32.451] [null-out-38] [INFO] [dku.utils]  - building tree 62 of 100
+[2020/06/29-23:33:32.455] [null-out-38] [INFO] [dku.utils]  - building tree 90 of 100
+[2020/06/29-23:33:32.461] [null-out-38] [INFO] [dku.utils]  - building tree 67 of 100
+[2020/06/29-23:33:32.467] [null-out-38] [INFO] [dku.utils]  - building tree 67 of 100
+[2020/06/29-23:33:32.484] [null-out-38] [INFO] [dku.utils]  - building tree 91 of 100
+[2020/06/29-23:33:32.495] [null-out-38] [INFO] [dku.utils]  - building tree 68 of 100
+[2020/06/29-23:33:32.498] [null-out-38] [INFO] [dku.utils]  - building tree 63 of 100
+[2020/06/29-23:33:32.502] [null-out-38] [INFO] [dku.utils]  - building tree 92 of 100
+[2020/06/29-23:33:32.505] [null-out-38] [INFO] [dku.utils]  - building tree 68 of 100
+[2020/06/29-23:33:32.525] [null-out-38] [INFO] [dku.utils]  - building tree 64 of 100
+[2020/06/29-23:33:32.528] [null-out-38] [INFO] [dku.utils]  - building tree 69 of 100
+[2020/06/29-23:33:32.534] [null-out-38] [INFO] [dku.utils]  - building tree 93 of 100
+[2020/06/29-23:33:32.542] [null-out-38] [INFO] [dku.utils]  - building tree 69 of 100
+[2020/06/29-23:33:32.547] [null-out-38] [INFO] [dku.utils]  - building tree 94 of 100
+[2020/06/29-23:33:32.564] [null-out-38] [INFO] [dku.utils]  - building tree 65 of 100
+[2020/06/29-23:33:32.570] [null-out-38] [INFO] [dku.utils]  - building tree 95 of 100
+[2020/06/29-23:33:32.571] [null-out-38] [INFO] [dku.utils]  - building tree 70 of 100
+[2020/06/29-23:33:32.576] [null-out-38] [INFO] [dku.utils]  - building tree 70 of 100
+[2020/06/29-23:33:32.590] [null-out-38] [INFO] [dku.utils]  - building tree 96 of 100
+[2020/06/29-23:33:32.591] [null-out-38] [INFO] [dku.utils]  - building tree 66 of 100
+[2020/06/29-23:33:32.612] [null-out-38] [INFO] [dku.utils]  - building tree 71 of 100
+[2020/06/29-23:33:32.623] [null-out-38] [INFO] [dku.utils]  - building tree 97 of 100
+[2020/06/29-23:33:32.629] [null-out-38] [INFO] [dku.utils]  - building tree 71 of 100
+[2020/06/29-23:33:32.641] [null-out-38] [INFO] [dku.utils]  - building tree 67 of 100
+[2020/06/29-23:33:32.649] [null-out-38] [INFO] [dku.utils]  - building tree 72 of 100
+[2020/06/29-23:33:32.650] [null-out-38] [INFO] [dku.utils]  - building tree 98 of 100
+[2020/06/29-23:33:32.659] [null-out-38] [INFO] [dku.utils]  - building tree 72 of 100
+[2020/06/29-23:33:32.668] [null-out-38] [INFO] [dku.utils]  - building tree 68 of 100
+[2020/06/29-23:33:32.670] [null-out-38] [INFO] [dku.utils]  - building tree 99 of 100
+[2020/06/29-23:33:32.686] [null-out-38] [INFO] [dku.utils]  - building tree 73 of 100
+[2020/06/29-23:33:32.698] [null-out-38] [INFO] [dku.utils]  - building tree 100 of 100
+[2020/06/29-23:33:32.703] [null-out-38] [INFO] [dku.utils]  - building tree 73 of 100
+[2020/06/29-23:33:32.717] [null-out-38] [INFO] [dku.utils]  - building tree 69 of 100
+[2020/06/29-23:33:32.725] [null-out-38] [INFO] [dku.utils]  - building tree 74 of 100
+[2020/06/29-23:33:32.733] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    3.3s finished
+[2020/06/29-23:33:32.734] [null-out-38] [INFO] [dku.utils]  - building tree 74 of 100
+[2020/06/29-23:33:32.739] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:32.741] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:32.753] [null-out-38] [INFO] [dku.utils]  - building tree 70 of 100
+[2020/06/29-23:33:32.758] [null-out-38] [INFO] [dku.utils]  - building tree 75 of 100
+[2020/06/29-23:33:32.777] [null-out-38] [INFO] [dku.utils]  - building tree 75 of 100
+[2020/06/29-23:33:32.789] [null-out-38] [INFO] [dku.utils]  - building tree 71 of 100building tree 76 of 100
+[2020/06/29-23:33:32.792] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020/06/29-23:33:32.795] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:32.796] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:32.808] [null-out-38] [INFO] [dku.utils]  - building tree 76 of 100
+[2020/06/29-23:33:32.847] [null-out-38] [INFO] [dku.utils]  - building tree 72 of 100
+[2020/06/29-23:33:32.851] [null-out-38] [INFO] [dku.utils]  - building tree 77 of 100
+[2020/06/29-23:33:32.872] [null-out-38] [INFO] [dku.utils]  - building tree 77 of 100
+[2020/06/29-23:33:32.885] [null-out-38] [INFO] [dku.utils]  - building tree 78 of 100
+[2020/06/29-23:33:32.886] [null-out-38] [INFO] [dku.utils]  - building tree 73 of 100
+[2020/06/29-23:33:32.888] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020/06/29-23:33:32.890] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:32,889 INFO Done p=0 s=0: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=6, min_samples_leaf=7 (ft=5.0s st=0.2s sc=0.676319259275)
+[2020/06/29-23:33:32.894] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:32,894 INFO Fit  p=0 s=1: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=6, min_samples_leaf=7 
+[2020/06/29-23:33:32.927] [null-out-38] [INFO] [dku.utils]  - building tree 79 of 100
+[2020/06/29-23:33:32.939] [null-out-38] [INFO] [dku.utils]  - building tree 78 of 100
+[2020/06/29-23:33:32.947] [null-out-38] [INFO] [dku.utils]  - building tree 74 of 100
+[2020/06/29-23:33:32.983] [null-out-38] [INFO] [dku.utils]  - building tree 80 of 100
+[2020/06/29-23:33:33.000] [null-out-38] [INFO] [dku.utils]  - building tree 79 of 100
+[2020/06/29-23:33:33.012] [null-out-38] [INFO] [dku.utils]  - building tree 75 of 100
+[2020/06/29-23:33:33.051] [null-out-38] [INFO] [dku.utils]  - building tree 81 of 100
+[2020/06/29-23:33:33.053] [null-out-38] [INFO] [dku.utils]  -  building tree 76 of 100
+[2020/06/29-23:33:33.055] [null-out-38] [INFO] [dku.utils]  - building tree 80 of 100
+[2020/06/29-23:33:33.095] [null-out-38] [INFO] [dku.utils]  - building tree 77 of 100
+[2020/06/29-23:33:33.097] [null-out-38] [INFO] [dku.utils]  - building tree 82 of 100
+[2020/06/29-23:33:33.108] [null-out-38] [INFO] [dku.utils]  - building tree 81 of 100
+[2020/06/29-23:33:33.133] [null-out-38] [INFO] [dku.utils]  - building tree 83 of 100
+[2020/06/29-23:33:33.144] [null-out-38] [INFO] [dku.utils]  - building tree 78 of 100
+[2020/06/29-23:33:33.163] [null-out-38] [INFO] [dku.utils]  - building tree 82 of 100
+[2020/06/29-23:33:33.185] [null-out-38] [INFO] [dku.utils]  - building tree 84 of 100
+[2020/06/29-23:33:33.186] [null-out-38] [INFO] [dku.utils]  -  building tree 79 of 100
+[2020/06/29-23:33:33.222] [null-out-38] [INFO] [dku.utils]  - building tree 83 of 100
+[2020/06/29-23:33:33.253] [null-out-38] [INFO] [dku.utils]  - building tree 85 of 100
+[2020/06/29-23:33:33.254] [null-out-38] [INFO] [dku.utils]  - building tree 80 of 100
+[2020/06/29-23:33:33.277] [null-out-38] [INFO] [dku.utils]  - building tree 84 of 100
+[2020/06/29-23:33:33.288] [null-out-38] [INFO] [dku.utils]  - building tree 81 of 100
+[2020/06/29-23:33:33.300] [null-out-38] [INFO] [dku.utils]  - building tree 86 of 100
+[2020/06/29-23:33:33.328] [null-out-38] [INFO] [dku.utils]  - building tree 85 of 100
+[2020/06/29-23:33:33.337] [null-out-38] [INFO] [dku.utils]  - building tree 82 of 100
+[2020/06/29-23:33:33.344] [null-out-38] [INFO] [dku.utils]  - building tree 87 of 100
+[2020/06/29-23:33:33.371] [null-out-38] [INFO] [dku.utils]  - building tree 86 of 100
+[2020/06/29-23:33:33.391] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:33.392] [null-out-38] [INFO] [dku.utils]  - building tree 83 of 100
+[2020/06/29-23:33:33.394] [null-out-38] [INFO] [dku.utils]  - building tree 88 of 100
+[2020/06/29-23:33:33.400] [null-out-38] [INFO] [dku.utils]  - building tree 1 of 100
+[2020/06/29-23:33:33.411] [null-out-38] [INFO] [dku.utils]  - building tree 87 of 100
+[2020/06/29-23:33:33.420] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:33.421] [null-out-38] [INFO] [dku.utils]  - building tree 84 of 100
+[2020/06/29-23:33:33.423] [null-out-38] [INFO] [dku.utils]  - building tree 2 of 100
+[2020/06/29-23:33:33.426] [null-out-38] [INFO] [dku.utils]  - building tree 89 of 100
+[2020/06/29-23:33:33.437] [null-out-38] [INFO] [dku.utils]  - building tree 88 of 100
+[2020/06/29-23:33:33.447] [null-out-38] [INFO] [dku.utils]  - building tree 3 of 100
+[2020/06/29-23:33:33.448] [null-out-38] [INFO] [dku.utils]  - building tree 85 of 100
+[2020/06/29-23:33:33.450] [null-out-38] [INFO] [dku.utils]  - building tree 90 of 100
+[2020/06/29-23:33:33.464] [null-out-38] [INFO] [dku.utils]  - building tree 4 of 100
+[2020/06/29-23:33:33.471] [null-out-38] [INFO] [dku.utils]  - building tree 89 of 100
+[2020/06/29-23:33:33.477] [null-out-38] [INFO] [dku.utils]  - building tree 91 of 100
+[2020/06/29-23:33:33.478] [null-out-38] [INFO] [dku.utils]  - building tree 86 of 100
+[2020/06/29-23:33:33.484] [null-out-38] [INFO] [dku.utils]  - building tree 5 of 100
+[2020/06/29-23:33:33.497] [null-out-38] [INFO] [dku.utils]  - building tree 90 of 100
+[2020/06/29-23:33:33.504] [null-out-38] [INFO] [dku.utils]  - building tree 92 of 100
+[2020/06/29-23:33:33.505] [null-out-38] [INFO] [dku.utils]  - building tree 87 of 100
+[2020/06/29-23:33:33.509] [null-out-38] [INFO] [dku.utils]  - building tree 6 of 100
+[2020/06/29-23:33:33.526] [null-out-38] [INFO] [dku.utils]  - building tree 91 of 100
+[2020/06/29-23:33:33.530] [null-out-38] [INFO] [dku.utils]  - building tree 93 of 100
+[2020/06/29-23:33:33.531] [null-out-38] [INFO] [dku.utils]  - building tree 7 of 100
+[2020/06/29-23:33:33.533] [null-out-38] [INFO] [dku.utils]  - building tree 88 of 100
+[2020/06/29-23:33:33.554] [null-out-38] [INFO] [dku.utils]  - building tree 92 of 100
+[2020/06/29-23:33:33.559] [null-out-38] [INFO] [dku.utils]  - building tree 94 of 100
+[2020/06/29-23:33:33.560] [null-out-38] [INFO] [dku.utils]  - building tree 89 of 100
+[2020/06/29-23:33:33.562] [null-out-38] [INFO] [dku.utils]  - building tree 8 of 100
+[2020/06/29-23:33:33.580] [null-out-38] [INFO] [dku.utils]  - building tree 9 of 100
+[2020/06/29-23:33:33.582] [null-out-38] [INFO] [dku.utils]  - building tree 93 of 100
+[2020/06/29-23:33:33.598] [null-out-38] [INFO] [dku.utils]  - building tree 10 of 100
+[2020/06/29-23:33:33.599] [null-out-38] [INFO] [dku.utils]  - building tree 90 of 100
+[2020/06/29-23:33:33.603] [null-out-38] [INFO] [dku.utils]  - building tree 95 of 100
+[2020/06/29-23:33:33.610] [null-out-38] [INFO] [dku.utils]  - building tree 94 of 100
+[2020/06/29-23:33:33.621] [null-out-38] [INFO] [dku.utils]  - building tree 11 of 100
+[2020/06/29-23:33:33.632] [null-out-38] [INFO] [dku.utils]  - building tree 91 of 100
+[2020/06/29-23:33:33.638] [null-out-38] [INFO] [dku.utils]  - building tree 96 of 100
+[2020/06/29-23:33:33.650] [null-out-38] [INFO] [dku.utils]  - building tree 95 of 100
+[2020/06/29-23:33:33.657] [null-out-38] [INFO] [dku.utils]  - building tree 92 of 100
+[2020/06/29-23:33:33.662] [null-out-38] [INFO] [dku.utils]  - building tree 12 of 100
+[2020/06/29-23:33:33.664] [null-out-38] [INFO] [dku.utils]  - building tree 97 of 100
+[2020/06/29-23:33:33.679] [null-out-38] [INFO] [dku.utils]  - building tree 13 of 100
+[2020/06/29-23:33:33.686] [null-out-38] [INFO] [dku.utils]  - building tree 96 of 100
+[2020/06/29-23:33:33.699] [null-out-38] [INFO] [dku.utils]  - building tree 93 of 100
+[2020/06/29-23:33:33.702] [null-out-38] [INFO] [dku.utils]  - building tree 14 of 100
+[2020/06/29-23:33:33.705] [null-out-38] [INFO] [dku.utils]  - building tree 98 of 100
+[2020/06/29-23:33:33.719] [null-out-38] [INFO] [dku.utils]  - building tree 97 of 100
+[2020/06/29-23:33:33.722] [null-out-38] [INFO] [dku.utils]  - building tree 15 of 100
+[2020/06/29-23:33:33.738] [null-out-38] [INFO] [dku.utils]  - building tree 94 of 100
+[2020/06/29-23:33:33.739] [null-out-38] [INFO] [dku.utils]  - building tree 16 of 100
+[2020/06/29-23:33:33.745] [null-out-38] [INFO] [dku.utils]  - building tree 99 of 100
+[2020/06/29-23:33:33.757] [null-out-38] [INFO] [dku.utils]  - building tree 98 of 100
+[2020/06/29-23:33:33.768] [null-out-38] [INFO] [dku.utils]  - building tree 17 of 100
+[2020/06/29-23:33:33.775] [null-out-38] [INFO] [dku.utils]  - building tree 95 of 100
+[2020/06/29-23:33:33.782] [null-out-38] [INFO] [dku.utils]  - building tree 100 of 100
+[2020/06/29-23:33:33.783] [null-out-38] [INFO] [dku.utils]  - building tree 99 of 100
+[2020/06/29-23:33:33.789] [null-out-38] [INFO] [dku.utils]  - building tree 18 of 100
+[2020/06/29-23:33:33.803] [null-out-38] [INFO] [dku.utils]  - building tree 96 of 100
+[2020/06/29-23:33:33.812] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    4.7s finished
+[2020/06/29-23:33:33.815] [null-out-38] [INFO] [dku.utils]  - building tree 19 of 100
+[2020/06/29-23:33:33.816] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:33.819] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:33.825] [null-out-38] [INFO] [dku.utils]  - building tree 100 of 100
+[2020/06/29-23:33:33.838] [null-out-38] [INFO] [dku.utils]  - building tree 20 of 100
+[2020/06/29-23:33:33.839] [null-out-38] [INFO] [dku.utils]  - building tree 97 of 100
+[2020/06/29-23:33:33.859] [null-out-38] [INFO] [dku.utils]  - building tree 21 of 100
+[2020/06/29-23:33:33.863] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    4.7s finished
+[2020/06/29-23:33:33.866] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:33.867] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:33.879] [null-out-38] [INFO] [dku.utils]  - building tree 22 of 100
+[2020/06/29-23:33:33.880] [null-out-38] [INFO] [dku.utils]  - building tree 98 of 100
+[2020/06/29-23:33:33.894] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020/06/29-23:33:33.898] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:33.899] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:33.903] [null-out-38] [INFO] [dku.utils]  - building tree 23 of 100
+[2020/06/29-23:33:33.913] [null-out-38] [INFO] [dku.utils]  - building tree 99 of 100
+[2020/06/29-23:33:33.930] [null-out-38] [INFO] [dku.utils]  - building tree 24 of 100
+[2020/06/29-23:33:33.950] [null-out-38] [INFO] [dku.utils]  - building tree 100 of 100
+[2020/06/29-23:33:33.953] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020/06/29-23:33:33.958] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:33.961] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:33.972] [null-out-38] [INFO] [dku.utils]  - building tree 25 of 100
+[2020/06/29-23:33:34.003] [null-out-38] [INFO] [dku.utils]  - building tree 26 of 100
+[2020/06/29-23:33:34.010] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    4.6s finished
+[2020/06/29-23:33:34.015] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:34.016] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:34.026] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020/06/29-23:33:34.028] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:34,027 INFO Done p=1 s=0: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=14, min_samples_leaf=7 (ft=6.2s st=0.2s sc=0.692898931266)
+[2020/06/29-23:33:34.029] [null-out-38] [INFO] [dku.utils]  - building tree 27 of 100
+[2020/06/29-23:33:34.037] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:34,037 INFO Fit  p=0 s=2: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=6, min_samples_leaf=7 
+[2020/06/29-23:33:34.060] [null-out-38] [INFO] [dku.utils]  - building tree 28 of 100
+[2020/06/29-23:33:34.098] [null-out-38] [INFO] [dku.utils]  - building tree 29 of 100
+[2020/06/29-23:33:34.145] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.2s finished
+[2020/06/29-23:33:34.151] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:34,150 INFO Done p=1 s=1: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=14, min_samples_leaf=7 (ft=6.2s st=0.3s sc=0.688861436469)
+[2020/06/29-23:33:34.173] [null-out-38] [INFO] [dku.utils]  - building tree 30 of 100
+[2020/06/29-23:33:34.220] [null-out-38] [INFO] [dku.utils]  - building tree 31 of 100
+[2020/06/29-23:33:34.284] [null-out-38] [INFO] [dku.utils]  - building tree 32 of 100
+[2020/06/29-23:33:34.339] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.3s finished
+[2020/06/29-23:33:34.354] [null-out-38] [INFO] [dku.utils]  - building tree 33 of 100
+[2020/06/29-23:33:34.362] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:34.364] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:34.427] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:34.427] [null-out-38] [INFO] [dku.utils]  - building tree 1 of 100
+[2020/06/29-23:33:34.430] [null-out-38] [INFO] [dku.utils]  - building tree 34 of 100
+[2020/06/29-23:33:34.449] [null-out-38] [INFO] [dku.utils]  - building tree 35 of 100
+[2020/06/29-23:33:34.455] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:34.456] [null-out-38] [INFO] [dku.utils]  - building tree 2 of 100
+[2020/06/29-23:33:34.471] [null-out-38] [INFO] [dku.utils]  - building tree 36 of 100
+[2020/06/29-23:33:34.479] [null-out-38] [INFO] [dku.utils]  - building tree 3 of 100
+[2020/06/29-23:33:34.489] [null-out-38] [INFO] [dku.utils]  - building tree 37 of 100
+[2020/06/29-23:33:34.501] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020/06/29-23:33:34.502] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:34,502 INFO Done p=1 s=2: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=14, min_samples_leaf=7 (ft=6.3s st=0.5s sc=0.688483096642)
+[2020/06/29-23:33:34.513] [null-out-38] [INFO] [dku.utils]  - building tree 4 of 100
+[2020/06/29-23:33:34.515] [null-out-38] [INFO] [dku.utils]  - building tree 38 of 100
+[2020/06/29-23:33:34.529] [null-out-38] [INFO] [dku.utils]  - building tree 5 of 100
+[2020/06/29-23:33:34.531] [null-out-38] [INFO] [dku.utils]  - building tree 39 of 100
+[2020/06/29-23:33:34.547] [null-out-38] [INFO] [dku.utils]  - building tree 6 of 100
+[2020/06/29-23:33:34.549] [null-out-38] [INFO] [dku.utils]  - building tree 40 of 100
+[2020/06/29-23:33:34.565] [null-out-38] [INFO] [dku.utils]  - building tree 41 of 100
+[2020/06/29-23:33:34.566] [null-out-38] [INFO] [dku.utils]  - building tree 7 of 100
+[2020/06/29-23:33:34.582] [null-out-38] [INFO] [dku.utils]  - building tree 42 of 100
+[2020/06/29-23:33:34.585] [null-out-38] [INFO] [dku.utils]  - building tree 8 of 100
+[2020/06/29-23:33:34.601] [null-out-38] [INFO] [dku.utils]  - building tree 43 of 100
+[2020/06/29-23:33:34.602] [null-out-38] [INFO] [dku.utils]  - building tree 9 of 100
+[2020/06/29-23:33:34.618] [null-out-38] [INFO] [dku.utils]  - building tree 10 of 100
+[2020/06/29-23:33:34.622] [null-out-38] [INFO] [dku.utils]  - building tree 44 of 100
+[2020/06/29-23:33:34.637] [null-out-38] [INFO] [dku.utils]  - building tree 11 of 100
+[2020/06/29-23:33:34.639] [null-out-38] [INFO] [dku.utils]  - building tree 45 of 100
+[2020/06/29-23:33:34.655] [null-out-38] [INFO] [dku.utils]  - building tree 12 of 100
+[2020/06/29-23:33:34.660] [null-out-38] [INFO] [dku.utils]  - building tree 46 of 100
+[2020/06/29-23:33:34.673] [null-out-38] [INFO] [dku.utils]  - building tree 13 of 100
+[2020/06/29-23:33:34.679] [null-out-38] [INFO] [dku.utils]  - building tree 47 of 100
+[2020/06/29-23:33:34.697] [null-out-38] [INFO] [dku.utils]  - building tree 48 of 100
+[2020/06/29-23:33:34.699] [null-out-38] [INFO] [dku.utils]  - building tree 14 of 100
+[2020/06/29-23:33:34.716] [null-out-38] [INFO] [dku.utils]  - building tree 49 of 100
+[2020/06/29-23:33:34.719] [null-out-38] [INFO] [dku.utils]  - building tree 15 of 100
+[2020/06/29-23:33:34.733] [null-out-38] [INFO] [dku.utils]  - building tree 50 of 100
+[2020/06/29-23:33:34.738] [null-out-38] [INFO] [dku.utils]  - building tree 16 of 100
+[2020/06/29-23:33:34.749] [null-out-38] [INFO] [dku.utils]  - building tree 51 of 100
+[2020/06/29-23:33:34.755] [null-out-38] [INFO] [dku.utils]  - building tree 17 of 100
+[2020/06/29-23:33:34.768] [null-out-38] [INFO] [dku.utils]  - building tree 52 of 100
+[2020/06/29-23:33:34.798] [null-out-38] [INFO] [dku.utils]  - building tree 53 of 100
+[2020/06/29-23:33:34.815] [null-out-38] [INFO] [dku.utils]  - building tree 18 of 100
+[2020/06/29-23:33:34.843] [null-out-38] [INFO] [dku.utils]  - building tree 54 of 100
+[2020/06/29-23:33:34.855] [null-out-38] [INFO] [dku.utils]  - building tree 19 of 100
+[2020/06/29-23:33:34.866] [null-out-38] [INFO] [dku.utils]  - building tree 55 of 100
+[2020/06/29-23:33:34.926] [null-out-38] [INFO] [dku.utils]  - building tree 56 of 100
+[2020/06/29-23:33:34.930] [null-out-38] [INFO] [dku.utils]  - building tree 20 of 100
+[2020/06/29-23:33:34.968] [null-out-38] [INFO] [dku.utils]  - building tree 21 of 100
+[2020/06/29-23:33:34.971] [null-out-38] [INFO] [dku.utils]  - building tree 57 of 100
+[2020/06/29-23:33:34.990] [null-out-38] [INFO] [dku.utils]  - building tree 22 of 100
+[2020/06/29-23:33:34.992] [null-out-38] [INFO] [dku.utils]  - building tree 58 of 100
+[2020/06/29-23:33:35.007] [null-out-38] [INFO] [dku.utils]  - building tree 23 of 100
+[2020/06/29-23:33:35.009] [null-out-38] [INFO] [dku.utils]  - building tree 59 of 100
+[2020/06/29-23:33:35.022] [null-out-38] [INFO] [dku.utils]  - building tree 24 of 100
+[2020/06/29-23:33:35.029] [null-out-38] [INFO] [dku.utils]  - building tree 60 of 100
+[2020/06/29-23:33:35.046] [null-out-38] [INFO] [dku.utils]  - building tree 25 of 100
+[2020/06/29-23:33:35.049] [null-out-38] [INFO] [dku.utils]  - building tree 61 of 100
+[2020/06/29-23:33:35.067] [null-out-38] [INFO] [dku.utils]  - building tree 62 of 100
+[2020/06/29-23:33:35.068] [null-out-38] [INFO] [dku.utils]  - building tree 26 of 100
+[2020/06/29-23:33:35.087] [null-out-38] [INFO] [dku.utils]  - building tree 63 of 100
+[2020/06/29-23:33:35.089] [null-out-38] [INFO] [dku.utils]  -  building tree 27 of 100
+[2020/06/29-23:33:35.117] [null-out-38] [INFO] [dku.utils]  - building tree 28 of 100
+[2020/06/29-23:33:35.119] [null-out-38] [INFO] [dku.utils]  - building tree 64 of 100
+[2020/06/29-23:33:35.137] [null-out-38] [INFO] [dku.utils]  - building tree 29 of 100
+[2020/06/29-23:33:35.142] [null-out-38] [INFO] [dku.utils]  - building tree 65 of 100
+[2020/06/29-23:33:35.159] [null-out-38] [INFO] [dku.utils]  - building tree 30 of 100
+[2020/06/29-23:33:35.161] [null-out-38] [INFO] [dku.utils]  - building tree 66 of 100
+[2020/06/29-23:33:35.175] [null-out-38] [INFO] [dku.utils]  - building tree 31 of 100
+[2020/06/29-23:33:35.179] [null-out-38] [INFO] [dku.utils]  - building tree 67 of 100
+[2020/06/29-23:33:35.197] [null-out-38] [INFO] [dku.utils]  - building tree 68 of 100
+[2020/06/29-23:33:35.200] [null-out-38] [INFO] [dku.utils]  - building tree 32 of 100
+[2020/06/29-23:33:35.217] [null-out-38] [INFO] [dku.utils]  - building tree 69 of 100
+[2020/06/29-23:33:35.219] [null-out-38] [INFO] [dku.utils]  - building tree 33 of 100
+[2020/06/29-23:33:35.238] [null-out-38] [INFO] [dku.utils]  - building tree 70 of 100
+[2020/06/29-23:33:35.238] [null-out-38] [INFO] [dku.utils]  - building tree 34 of 100
+[2020/06/29-23:33:35.257] [null-out-38] [INFO] [dku.utils]  - building tree 71 of 100
+[2020/06/29-23:33:35.258] [null-out-38] [INFO] [dku.utils]  - building tree 35 of 100
+[2020/06/29-23:33:35.276] [null-out-38] [INFO] [dku.utils]  - building tree 36 of 100
+[2020/06/29-23:33:35.277] [null-out-38] [INFO] [dku.utils]  - building tree 72 of 100
+[2020/06/29-23:33:35.300] [null-out-38] [INFO] [dku.utils]  - building tree 73 of 100
+[2020/06/29-23:33:35.301] [null-out-38] [INFO] [dku.utils]  - building tree 37 of 100
+[2020/06/29-23:33:35.328] [null-out-38] [INFO] [dku.utils]  - building tree 38 of 100
+[2020/06/29-23:33:35.331] [null-out-38] [INFO] [dku.utils]  - building tree 74 of 100
+[2020/06/29-23:33:35.369] [null-out-38] [INFO] [dku.utils]  - building tree 39 of 100
+[2020/06/29-23:33:35.386] [null-out-38] [INFO] [dku.utils]  - building tree 75 of 100
+[2020/06/29-23:33:35.646] [null-out-38] [INFO] [dku.utils]  - building tree 40 of 100
+[2020/06/29-23:33:35.672] [null-out-38] [INFO] [dku.utils]  - building tree 76 of 100
+[2020/06/29-23:33:35.679] [null-out-38] [INFO] [dku.utils]  - building tree 41 of 100
+[2020/06/29-23:33:35.715] [null-out-38] [INFO] [dku.utils]  - building tree 77 of 100
+[2020/06/29-23:33:35.727] [null-out-38] [INFO] [dku.utils]  - building tree 42 of 100
+[2020/06/29-23:33:35.735] [null-out-38] [INFO] [dku.utils]  - building tree 78 of 100
+[2020/06/29-23:33:35.754] [null-out-38] [INFO] [dku.utils]  - building tree 43 of 100
+[2020/06/29-23:33:35.761] [null-out-38] [INFO] [dku.utils]  - building tree 79 of 100
+[2020/06/29-23:33:35.785] [null-out-38] [INFO] [dku.utils]  - building tree 44 of 100
+[2020/06/29-23:33:35.790] [null-out-38] [INFO] [dku.utils]  - building tree 80 of 100
+[2020/06/29-23:33:35.808] [null-out-38] [INFO] [dku.utils]  - building tree 45 of 100
+[2020/06/29-23:33:35.814] [null-out-38] [INFO] [dku.utils]  - building tree 81 of 100
+[2020/06/29-23:33:35.829] [null-out-38] [INFO] [dku.utils]  - building tree 46 of 100
+[2020/06/29-23:33:35.837] [null-out-38] [INFO] [dku.utils]  - building tree 82 of 100
+[2020/06/29-23:33:35.846] [null-out-38] [INFO] [dku.utils]  - building tree 47 of 100
+[2020/06/29-23:33:35.854] [null-out-38] [INFO] [dku.utils]  - building tree 83 of 100
+[2020/06/29-23:33:35.862] [null-out-38] [INFO] [dku.utils]  - building tree 48 of 100
+[2020/06/29-23:33:35.870] [null-out-38] [INFO] [dku.utils]  - building tree 84 of 100
+[2020/06/29-23:33:35.878] [null-out-38] [INFO] [dku.utils]  - building tree 49 of 100
+[2020/06/29-23:33:35.886] [null-out-38] [INFO] [dku.utils]  - building tree 85 of 100
+[2020/06/29-23:33:35.894] [null-out-38] [INFO] [dku.utils]  - building tree 50 of 100
+[2020/06/29-23:33:35.902] [null-out-38] [INFO] [dku.utils]  - building tree 86 of 100
+[2020/06/29-23:33:35.911] [null-out-38] [INFO] [dku.utils]  - building tree 51 of 100
+[2020/06/29-23:33:35.916] [null-out-38] [INFO] [dku.utils]  - building tree 87 of 100
+[2020/06/29-23:33:35.929] [null-out-38] [INFO] [dku.utils]  - building tree 52 of 100
+[2020/06/29-23:33:35.934] [null-out-38] [INFO] [dku.utils]  - building tree 88 of 100
+[2020/06/29-23:33:35.946] [null-out-38] [INFO] [dku.utils]  - building tree 53 of 100
+[2020/06/29-23:33:35.953] [null-out-38] [INFO] [dku.utils]  - building tree 89 of 100
+[2020/06/29-23:33:35.962] [null-out-38] [INFO] [dku.utils]  - building tree 54 of 100
+[2020/06/29-23:33:35.973] [null-out-38] [INFO] [dku.utils]  - building tree 90 of 100
+[2020/06/29-23:33:35.980] [null-out-38] [INFO] [dku.utils]  - building tree 55 of 100
+[2020/06/29-23:33:35.991] [null-out-38] [INFO] [dku.utils]  - building tree 91 of 100
+[2020/06/29-23:33:35.999] [null-out-38] [INFO] [dku.utils]  - building tree 56 of 100
+[2020/06/29-23:33:36.007] [null-out-38] [INFO] [dku.utils]  - building tree 92 of 100
+[2020/06/29-23:33:36.017] [null-out-38] [INFO] [dku.utils]  - building tree 57 of 100
+[2020/06/29-23:33:36.027] [null-out-38] [INFO] [dku.utils]  - building tree 93 of 100
+[2020/06/29-23:33:36.038] [null-out-38] [INFO] [dku.utils]  - building tree 58 of 100
+[2020/06/29-23:33:36.046] [null-out-38] [INFO] [dku.utils]  - building tree 94 of 100
+[2020/06/29-23:33:36.058] [null-out-38] [INFO] [dku.utils]  - building tree 59 of 100
+[2020/06/29-23:33:36.064] [null-out-38] [INFO] [dku.utils]  - building tree 95 of 100
+[2020/06/29-23:33:36.078] [null-out-38] [INFO] [dku.utils]  - building tree 60 of 100
+[2020/06/29-23:33:36.080] [null-out-38] [INFO] [dku.utils]  - building tree 96 of 100
+[2020/06/29-23:33:36.094] [null-out-38] [INFO] [dku.utils]  - building tree 61 of 100
+[2020/06/29-23:33:36.098] [null-out-38] [INFO] [dku.utils]  - building tree 97 of 100
+[2020/06/29-23:33:36.112] [null-out-38] [INFO] [dku.utils]  - building tree 62 of 100
+[2020/06/29-23:33:36.114] [null-out-38] [INFO] [dku.utils]  - building tree 98 of 100
+[2020/06/29-23:33:36.127] [null-out-38] [INFO] [dku.utils]  - building tree 63 of 100
+[2020/06/29-23:33:36.131] [null-out-38] [INFO] [dku.utils]  - building tree 99 of 100
+[2020/06/29-23:33:36.144] [null-out-38] [INFO] [dku.utils]  - building tree 64 of 100
+[2020/06/29-23:33:36.147] [null-out-38] [INFO] [dku.utils]  - building tree 100 of 100
+[2020/06/29-23:33:36.163] [null-out-38] [INFO] [dku.utils]  - building tree 65 of 100
+[2020/06/29-23:33:36.165] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    2.8s finished
+[2020/06/29-23:33:36.166] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:36.167] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:36.186] [null-out-38] [INFO] [dku.utils]  - building tree 66 of 100
+[2020/06/29-23:33:36.202] [null-out-38] [INFO] [dku.utils]  - building tree 67 of 100
+[2020/06/29-23:33:36.205] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.0s finished
+[2020/06/29-23:33:36.208] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:36.211] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:36.231] [null-out-38] [INFO] [dku.utils]  - building tree 68 of 100
+[2020/06/29-23:33:36.253] [null-out-38] [INFO] [dku.utils]  - building tree 69 of 100
+[2020/06/29-23:33:36.264] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.1s finished
+[2020/06/29-23:33:36.266] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:36,266 INFO Done p=0 s=1: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=6, min_samples_leaf=7 (ft=3.3s st=0.1s sc=0.674739852232)
+[2020/06/29-23:33:36.270] [null-out-38] [INFO] [dku.utils]  - building tree 70 of 100
+[2020/06/29-23:33:36.283] [null-out-38] [INFO] [dku.utils]  - building tree 71 of 100
+[2020/06/29-23:33:36.294] [null-out-38] [INFO] [dku.utils]  - building tree 72 of 100
+[2020/06/29-23:33:36.306] [null-out-38] [INFO] [dku.utils]  - building tree 73 of 100
+[2020/06/29-23:33:36.321] [null-out-38] [INFO] [dku.utils]  - building tree 74 of 100
+[2020/06/29-23:33:36.335] [null-out-38] [INFO] [dku.utils]  - building tree 75 of 100
+[2020/06/29-23:33:36.347] [null-out-38] [INFO] [dku.utils]  - building tree 76 of 100
+[2020/06/29-23:33:36.359] [null-out-38] [INFO] [dku.utils]  - building tree 77 of 100
+[2020/06/29-23:33:36.371] [null-out-38] [INFO] [dku.utils]  - building tree 78 of 100
+[2020/06/29-23:33:36.383] [null-out-38] [INFO] [dku.utils]  - building tree 79 of 100
+[2020/06/29-23:33:36.396] [null-out-38] [INFO] [dku.utils]  - building tree 80 of 100
+[2020/06/29-23:33:36.408] [null-out-38] [INFO] [dku.utils]  - building tree 81 of 100
+[2020/06/29-23:33:36.420] [null-out-38] [INFO] [dku.utils]  - building tree 82 of 100
+[2020/06/29-23:33:36.432] [null-out-38] [INFO] [dku.utils]  - building tree 83 of 100
+[2020/06/29-23:33:36.445] [null-out-38] [INFO] [dku.utils]  - building tree 84 of 100
+[2020/06/29-23:33:36.457] [null-out-38] [INFO] [dku.utils]  - building tree 85 of 100
+[2020/06/29-23:33:36.469] [null-out-38] [INFO] [dku.utils]  - building tree 86 of 100
+[2020/06/29-23:33:36.481] [null-out-38] [INFO] [dku.utils]  - building tree 87 of 100
+[2020/06/29-23:33:36.493] [null-out-38] [INFO] [dku.utils]  - building tree 88 of 100
+[2020/06/29-23:33:36.505] [null-out-38] [INFO] [dku.utils]  - building tree 89 of 100
+[2020/06/29-23:33:36.517] [null-out-38] [INFO] [dku.utils]  - building tree 90 of 100
+[2020/06/29-23:33:36.530] [null-out-38] [INFO] [dku.utils]  - building tree 91 of 100
+[2020/06/29-23:33:36.542] [null-out-38] [INFO] [dku.utils]  - building tree 92 of 100
+[2020/06/29-23:33:36.554] [null-out-38] [INFO] [dku.utils]  - building tree 93 of 100
+[2020/06/29-23:33:36.566] [null-out-38] [INFO] [dku.utils]  - building tree 94 of 100
+[2020/06/29-23:33:36.578] [null-out-38] [INFO] [dku.utils]  - building tree 95 of 100
+[2020/06/29-23:33:36.591] [null-out-38] [INFO] [dku.utils]  - building tree 96 of 100
+[2020/06/29-23:33:36.603] [null-out-38] [INFO] [dku.utils]  - building tree 97 of 100
+[2020/06/29-23:33:36.616] [null-out-38] [INFO] [dku.utils]  - building tree 98 of 100
+[2020/06/29-23:33:36.629] [null-out-38] [INFO] [dku.utils]  - building tree 99 of 100
+[2020/06/29-23:33:36.641] [null-out-38] [INFO] [dku.utils]  - building tree 100 of 100
+[2020/06/29-23:33:36.654] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    2.2s finished
+[2020/06/29-23:33:36.656] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:36.657] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:36.678] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.0s finished
+[2020/06/29-23:33:36.679] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:36.682] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:36.723] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.0s finished
+[2020/06/29-23:33:36.725] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:36,724 INFO Done p=0 s=2: max_features=auto, n_estimators=100, min_samples_split=21, max_depth=6, min_samples_leaf=7 (ft=2.6s st=0.1s sc=0.679067584987)
+[2020/06/29-23:33:36.726] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=4)]: Done   6 out of   6 | elapsed:    9.2s finished
+[2020/06/29-23:33:37.604] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:37,604 INFO Grid search ended, got 6 scores out of 6
+[2020/06/29-23:33:37.608] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:37,607 INFO Grid search done, best_parameters being : {'max_features': u'auto', 'n_estimators': 100, 'min_samples_split': 21, 'max_depth': 14, 'min_samples_leaf': 7}
+[2020/06/29-23:33:37.613] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:37,611 INFO END -  Grid searching
+[2020/06/29-23:33:37.617] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:37,613 INFO START -  Fitting model
+[2020/06/29-23:33:37.621] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:37,617 INFO Fitting model:
+[2020/06/29-23:33:37.623] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:37,620 INFO   Model is: RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=14,
+[2020/06/29-23:33:37.626] [null-err-39] [INFO] [dku.utils]  -            max_features=u'auto', max_leaf_nodes=None,
+[2020/06/29-23:33:37.627] [null-err-39] [INFO] [dku.utils]  -            min_impurity_decrease=0.0, min_impurity_split=None,
+[2020/06/29-23:33:37.632] [null-err-39] [INFO] [dku.utils]  -            min_samples_leaf=7, min_samples_split=21,
+[2020/06/29-23:33:37.634] [null-err-39] [INFO] [dku.utils]  -            min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=1,
+[2020/06/29-23:33:37.635] [null-err-39] [INFO] [dku.utils]  -            oob_score=False, random_state=1337, verbose=2, warm_start=False)
+[2020/06/29-23:33:37.638] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:37,620 INFO   train_X class: <type 'numpy.ndarray'>
+[2020/06/29-23:33:37.639] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:37,621 INFO   train_X shape: (6394, 56)
+[2020/06/29-23:33:37.640] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:37,621 INFO   train_y shape: (6394,)
+[2020/06/29-23:33:37.645] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:37,621 INFO   calibration enabled: a sub-sample of the train data has been saved for calibration
+[2020/06/29-23:33:38.429] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:38.430] [null-out-38] [INFO] [dku.utils]  - building tree 1 of 100
+[2020/06/29-23:33:38.515] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s remaining:    0.0s
+[2020/06/29-23:33:38.516] [null-out-38] [INFO] [dku.utils]  - building tree 2 of 100
+[2020/06/29-23:33:38.673] [null-out-38] [INFO] [dku.utils]  - building tree 3 of 100
+[2020/06/29-23:33:38.874] [null-out-38] [INFO] [dku.utils]  - building tree 4 of 100
+[2020/06/29-23:33:39.041] [null-out-38] [INFO] [dku.utils]  - building tree 5 of 100
+[2020/06/29-23:33:39.430] [null-out-38] [INFO] [dku.utils]  - building tree 6 of 100
+[2020/06/29-23:33:39.768] [null-out-38] [INFO] [dku.utils]  - building tree 7 of 100
+[2020/06/29-23:33:39.940] [null-out-38] [INFO] [dku.utils]  - building tree 8 of 100
+[2020/06/29-23:33:40.171] [null-out-38] [INFO] [dku.utils]  - building tree 9 of 100
+[2020/06/29-23:33:40.399] [null-out-38] [INFO] [dku.utils]  - building tree 10 of 100
+[2020/06/29-23:33:40.599] [null-out-38] [INFO] [dku.utils]  - building tree 11 of 100
+[2020/06/29-23:33:40.725] [null-out-38] [INFO] [dku.utils]  - building tree 12 of 100
+[2020/06/29-23:33:40.887] [null-out-38] [INFO] [dku.utils]  - building tree 13 of 100
+[2020/06/29-23:33:40.979] [null-out-38] [INFO] [dku.utils]  - building tree 14 of 100
+[2020/06/29-23:33:41.045] [null-out-38] [INFO] [dku.utils]  - building tree 15 of 100
+[2020/06/29-23:33:41.169] [null-out-38] [INFO] [dku.utils]  - building tree 16 of 100
+[2020/06/29-23:33:41.234] [null-out-38] [INFO] [dku.utils]  - building tree 17 of 100
+[2020/06/29-23:33:41.301] [null-out-38] [INFO] [dku.utils]  - building tree 18 of 100
+[2020/06/29-23:33:41.347] [null-out-38] [INFO] [dku.utils]  - building tree 19 of 100
+[2020/06/29-23:33:41.381] [null-out-38] [INFO] [dku.utils]  - building tree 20 of 100
+[2020/06/29-23:33:41.419] [null-out-38] [INFO] [dku.utils]  - building tree 21 of 100
+[2020/06/29-23:33:41.460] [null-out-38] [INFO] [dku.utils]  - building tree 22 of 100
+[2020/06/29-23:33:41.502] [null-out-38] [INFO] [dku.utils]  - building tree 23 of 100
+[2020/06/29-23:33:41.548] [null-out-38] [INFO] [dku.utils]  - building tree 24 of 100
+[2020/06/29-23:33:41.591] [null-out-38] [INFO] [dku.utils]  - building tree 25 of 100
+[2020/06/29-23:33:41.655] [null-out-38] [INFO] [dku.utils]  - building tree 26 of 100
+[2020/06/29-23:33:41.696] [null-out-38] [INFO] [dku.utils]  - building tree 27 of 100
+[2020/06/29-23:33:41.736] [null-out-38] [INFO] [dku.utils]  - building tree 28 of 100
+[2020/06/29-23:33:41.784] [null-out-38] [INFO] [dku.utils]  - building tree 29 of 100
+[2020/06/29-23:33:41.827] [null-out-38] [INFO] [dku.utils]  - building tree 30 of 100
+[2020/06/29-23:33:41.889] [null-out-38] [INFO] [dku.utils]  - building tree 31 of 100
+[2020/06/29-23:33:42.110] [null-out-38] [INFO] [dku.utils]  - building tree 32 of 100
+[2020/06/29-23:33:42.166] [null-out-38] [INFO] [dku.utils]  - building tree 33 of 100
+[2020/06/29-23:33:42.241] [null-out-38] [INFO] [dku.utils]  - building tree 34 of 100
+[2020/06/29-23:33:42.502] [null-out-38] [INFO] [dku.utils]  - building tree 35 of 100
+[2020/06/29-23:33:42.919] [null-out-38] [INFO] [dku.utils]  - building tree 36 of 100
+[2020/06/29-23:33:43.050] [null-out-38] [INFO] [dku.utils]  - building tree 37 of 100
+[2020/06/29-23:33:43.135] [null-out-38] [INFO] [dku.utils]  - building tree 38 of 100
+[2020/06/29-23:33:43.268] [null-out-38] [INFO] [dku.utils]  - building tree 39 of 100
+[2020/06/29-23:33:43.369] [null-out-38] [INFO] [dku.utils]  - building tree 40 of 100
+[2020/06/29-23:33:43.411] [null-out-38] [INFO] [dku.utils]  - building tree 41 of 100
+[2020/06/29-23:33:43.450] [null-out-38] [INFO] [dku.utils]  - building tree 42 of 100
+[2020/06/29-23:33:43.486] [null-out-38] [INFO] [dku.utils]  - building tree 43 of 100
+[2020/06/29-23:33:43.521] [null-out-38] [INFO] [dku.utils]  - building tree 44 of 100
+[2020/06/29-23:33:43.569] [null-out-38] [INFO] [dku.utils]  - building tree 45 of 100
+[2020/06/29-23:33:43.638] [null-out-38] [INFO] [dku.utils]  - building tree 46 of 100
+[2020/06/29-23:33:43.674] [null-out-38] [INFO] [dku.utils]  - building tree 47 of 100
+[2020/06/29-23:33:43.710] [null-out-38] [INFO] [dku.utils]  - building tree 48 of 100
+[2020/06/29-23:33:43.748] [null-out-38] [INFO] [dku.utils]  - building tree 49 of 100
+[2020/06/29-23:33:43.814] [null-out-38] [INFO] [dku.utils]  - building tree 50 of 100
+[2020/06/29-23:33:43.875] [null-out-38] [INFO] [dku.utils]  - building tree 51 of 100
+[2020/06/29-23:33:43.910] [null-out-38] [INFO] [dku.utils]  - building tree 52 of 100
+[2020/06/29-23:33:43.944] [null-out-38] [INFO] [dku.utils]  - building tree 53 of 100
+[2020/06/29-23:33:43.978] [null-out-38] [INFO] [dku.utils]  - building tree 54 of 100
+[2020/06/29-23:33:44.008] [null-out-38] [INFO] [dku.utils]  - building tree 55 of 100
+[2020/06/29-23:33:44.039] [null-out-38] [INFO] [dku.utils]  - building tree 56 of 100
+[2020/06/29-23:33:44.072] [null-out-38] [INFO] [dku.utils]  - building tree 57 of 100
+[2020/06/29-23:33:44.106] [null-out-38] [INFO] [dku.utils]  - building tree 58 of 100
+[2020/06/29-23:33:44.143] [null-out-38] [INFO] [dku.utils]  - building tree 59 of 100
+[2020/06/29-23:33:44.180] [null-out-38] [INFO] [dku.utils]  - building tree 60 of 100
+[2020/06/29-23:33:44.224] [null-out-38] [INFO] [dku.utils]  - building tree 61 of 100
+[2020/06/29-23:33:44.270] [null-out-38] [INFO] [dku.utils]  - building tree 62 of 100
+[2020/06/29-23:33:44.305] [null-out-38] [INFO] [dku.utils]  - building tree 63 of 100
+[2020/06/29-23:33:44.344] [null-out-38] [INFO] [dku.utils]  - building tree 64 of 100
+[2020/06/29-23:33:44.374] [null-out-38] [INFO] [dku.utils]  - building tree 65 of 100
+[2020/06/29-23:33:44.426] [null-out-38] [INFO] [dku.utils]  - building tree 66 of 100
+[2020/06/29-23:33:44.460] [null-out-38] [INFO] [dku.utils]  - building tree 67 of 100
+[2020/06/29-23:33:44.488] [null-out-38] [INFO] [dku.utils]  - building tree 68 of 100
+[2020/06/29-23:33:44.517] [null-out-38] [INFO] [dku.utils]  - building tree 69 of 100
+[2020/06/29-23:33:44.549] [null-out-38] [INFO] [dku.utils]  - building tree 70 of 100
+[2020/06/29-23:33:44.588] [null-out-38] [INFO] [dku.utils]  - building tree 71 of 100
+[2020/06/29-23:33:44.635] [null-out-38] [INFO] [dku.utils]  - building tree 72 of 100
+[2020/06/29-23:33:44.668] [null-out-38] [INFO] [dku.utils]  - building tree 73 of 100
+[2020/06/29-23:33:44.698] [null-out-38] [INFO] [dku.utils]  - building tree 74 of 100
+[2020/06/29-23:33:44.727] [null-out-38] [INFO] [dku.utils]  - building tree 75 of 100
+[2020/06/29-23:33:44.754] [null-out-38] [INFO] [dku.utils]  - building tree 76 of 100
+[2020/06/29-23:33:44.783] [null-out-38] [INFO] [dku.utils]  - building tree 77 of 100
+[2020/06/29-23:33:44.815] [null-out-38] [INFO] [dku.utils]  - building tree 78 of 100
+[2020/06/29-23:33:44.843] [null-out-38] [INFO] [dku.utils]  - building tree 79 of 100
+[2020/06/29-23:33:44.883] [null-out-38] [INFO] [dku.utils]  - building tree 80 of 100
+[2020/06/29-23:33:45.003] [null-out-38] [INFO] [dku.utils]  - building tree 81 of 100
+[2020/06/29-23:33:45.245] [null-out-38] [INFO] [dku.utils]  - building tree 82 of 100
+[2020/06/29-23:33:45.388] [null-out-38] [INFO] [dku.utils]  - building tree 83 of 100
+[2020/06/29-23:33:45.503] [null-out-38] [INFO] [dku.utils]  - building tree 84 of 100
+[2020/06/29-23:33:45.587] [null-out-38] [INFO] [dku.utils]  - building tree 85 of 100
+[2020/06/29-23:33:45.693] [null-out-38] [INFO] [dku.utils]  - building tree 86 of 100
+[2020/06/29-23:33:45.772] [null-out-38] [INFO] [dku.utils]  - building tree 87 of 100
+[2020/06/29-23:33:45.919] [null-out-38] [INFO] [dku.utils]  - building tree 88 of 100
+[2020/06/29-23:33:45.971] [null-out-38] [INFO] [dku.utils]  - building tree 89 of 100
+[2020/06/29-23:33:46.032] [null-out-38] [INFO] [dku.utils]  - building tree 90 of 100
+[2020/06/29-23:33:46.155] [null-out-38] [INFO] [dku.utils]  - building tree 91 of 100
+[2020/06/29-23:33:46.227] [null-out-38] [INFO] [dku.utils]  - building tree 92 of 100
+[2020/06/29-23:33:46.269] [null-out-38] [INFO] [dku.utils]  - building tree 93 of 100
+[2020/06/29-23:33:46.305] [null-out-38] [INFO] [dku.utils]  - building tree 94 of 100
+[2020/06/29-23:33:46.343] [null-out-38] [INFO] [dku.utils]  - building tree 95 of 100
+[2020/06/29-23:33:46.381] [null-out-38] [INFO] [dku.utils]  - building tree 96 of 100
+[2020/06/29-23:33:46.420] [null-out-38] [INFO] [dku.utils]  - building tree 97 of 100
+[2020/06/29-23:33:46.480] [null-out-38] [INFO] [dku.utils]  - building tree 98 of 100
+[2020/06/29-23:33:46.551] [null-out-38] [INFO] [dku.utils]  - building tree 99 of 100
+[2020/06/29-23:33:46.612] [null-out-38] [INFO] [dku.utils]  - building tree 100 of 100
+[2020/06/29-23:33:46.676] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    8.2s finished
+[2020/06/29-23:33:46.686] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:46,684 INFO RF Params are {'warm_start': False, 'oob_score': False, 'n_jobs': 1, 'min_impurity_decrease': 0.0, 'verbose': 2, 'max_leaf_nodes': None, 'bootstrap': True, 'min_samples_leaf': 7, 'n_estimators': 100, 'min_samples_split': 21, 'min_weight_fraction_leaf': 0.0, 'criterion': 'mse', 'random_state': 1337, 'min_impurity_split': None, 'max_features': u'auto', 'max_depth': 14} 
+[2020/06/29-23:33:46.688] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:46,687 INFO Output params are {'resolved': {'rf': {'max_tree_depth': 14, 'selection_mode': u'auto', 'njobs': 1, 'min_samples_leaf': 7, 'estimators': 100}, 'skipExpensiveReports': False, 'algorithm': u'RANDOM_FOREST_REGRESSION'}, 'other': {'rf_min_samples_split': 21}}
+[2020/06/29-23:33:46.689] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:46,688 INFO END -  Fitting model
+[2020/06/29-23:33:46.690] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:46,689 INFO START -  Saving model
+[2020/06/29-23:33:47.202] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:47,202 INFO END -  Saving model
+[2020/06/29-23:33:47.203] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:47,202 INFO START -  Scoring model
+[2020/06/29-23:33:47.204] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:47,203 INFO Intrinsic scoring
+[2020/06/29-23:33:47.205] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:47,203 INFO Extracting rescalers
+[2020/06/29-23:33:47.207] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:47,204 INFO Creating random forest trees summary
+[2020/06/29-23:33:47.402] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:47,402 INFO Computing RF PDP
+[2020/06/29-23:33:47.404] [null-out-38] [INFO] [dku.utils]  - (100, 1)
+[2020/06/29-23:33:48.045] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:48,045 INFO Computing feature importance
+[2020/06/29-23:33:48.055] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:48,054 INFO prepare multiframe shape=(2740,56) tn=153440 nnz=46580 fill_ratio=0.30
+[2020/06/29-23:33:48.056] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:48,055 INFO too small, using array
+[2020/06/29-23:33:48.058] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:48,057 INFO Creating predictions on test set
+[2020/06/29-23:33:48.059] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[2020/06/29-23:33:48.061] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s remaining:    0.0s
+[2020/06/29-23:33:48.101] [null-err-39] [INFO] [dku.utils]  - [Parallel(n_jobs=1)]: Done 100 out of 100 | elapsed:    0.0s finished
+[2020/06/29-23:33:48.105] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:48,102 INFO Computing regression performance on [7753.99258826 2867.28596211 9435.10770051 ... 4614.01693855 4105.88829664
+[2020/06/29-23:33:48.106] [null-err-39] [INFO] [dku.utils]  -  2768.72422722]
+[2020/06/29-23:33:49.277] [null-err-39] [INFO] [dku.utils]  - 2020-06-29 23:33:49,277 INFO END -  Scoring model
+[2020/06/29-23:33:50.663] [FRT-36-FlowRunnable] [INFO] [dku.ml.versioning] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Dumping version info {"trainedWithDSSVersion":"7.0.1","trainedWithDSSConfVersion":"7000","trainedWithDSSBackend":"PY_MEMORY","backendCompatibilityVersion":18} in /Volumes/DATA/dss_home/saved_models/CUSTOMERPREDICTIVEANALYTICS/zAQkA1ih/versions/1593448395995
+[2020/06/29-23:33:50.906] [FRT-36-FlowRunnable] [INFO] [dku.flow.activity] act.train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Run thread done for activity train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP
+[2020/06/29-23:33:50.999] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - activity is finished
+[2020/06/29-23:33:51.000] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Executing default post-activity lifecycle hook
+[2020/06/29-23:33:51.019] [ActivityExecutor-31] [INFO] [dip.cluster.selector] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Build cluster settings hadoop=__builtin__ k8s=__builtin__ authSource=USER_FROM_UI
+[2020/06/29-23:33:51.034] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Activity successful, computing metrics and running checks
+[2020/06/29-23:33:51.172] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Activity checks produced 0 values
+[2020/06/29-23:33:51.173] [ActivityExecutor-31] [INFO] [dku.flow.activity] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Activity successful, final-committing: Thread[FRT-36-FlowRunnable,5,]
+[2020/06/29-23:33:51.174] [ActivityExecutor-31] [INFO] [dku.recipes.prediction.train] running train_Prediction__RANDOM_FOREST_REGRESSION__on_train_NP - Setting new version as active scoring version

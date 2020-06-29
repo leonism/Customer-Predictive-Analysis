@@ -1,0 +1,75 @@
+{
+    "details": {
+        "EmploymentStatus": {
+            "levels": [
+                "Employed", 
+                "Unemployed", 
+                "Disabled", 
+                "Medical Leave", 
+                "Retired"
+            ], 
+            "with_others": true
+        }, 
+        "Vehicle Class": {
+            "levels": [
+                "Four-Door Car", 
+                "Two-Door Car", 
+                "SUV", 
+                "Sports Car", 
+                "Luxury SUV", 
+                "Luxury Car"
+            ], 
+            "with_others": true
+        }, 
+        "Vehicle Size": {
+            "levels": [
+                "Medsize", 
+                "Small", 
+                "Large"
+            ], 
+            "with_others": true
+        }, 
+        "Gender": {
+            "levels": [
+                "F", 
+                "M"
+            ], 
+            "with_others": true
+        }, 
+        "Sales Channel": {
+            "levels": [
+                "Agent", 
+                "Branch", 
+                "Call Center", 
+                "Web"
+            ], 
+            "with_others": true
+        }, 
+        "Marital Status": {
+            "levels": [
+                "Married", 
+                "Single", 
+                "Divorced"
+            ], 
+            "with_others": true
+        }, 
+        "Location Code": {
+            "levels": [
+                "Suburban", 
+                "Rural", 
+                "Urban"
+            ], 
+            "with_others": true
+        }, 
+        "Education": {
+            "levels": [
+                "Bachelor", 
+                "College", 
+                "High School or Below", 
+                "Master", 
+                "Doctor"
+            ], 
+            "with_others": true
+        }
+    }
+}
