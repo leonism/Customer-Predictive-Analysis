@@ -1,4 +1,4 @@
-![FIFA Logo](/images/fifa.png)
+![unsplash.jpg](/images/unsplash.jpg)
 
 # Customer Predictive Analysis
 
