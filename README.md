@@ -34,7 +34,11 @@ The very first correlation analysis consists of plotting the "Correlation matrix
 
 Since it does not really make sense to print this correlation plot for hundred of variables, we are restricting it to the first 50 numerical variables of the dataset.
 ![download-1.png](/images/download-1.png)
+
+# Regression Analysis with excluding Non-significant variables
 ![download.png](/images/download.png)
+
+# Regression Analysis with both Continuous and Categorical Variable
 ![download.png](/images/sales-and-response.png)
 
 
