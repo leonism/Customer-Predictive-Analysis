@@ -1,7 +1,18 @@
 # Customer Predictive Analysis
 Customer analytics is a process by which data from customer behavior is used to help make key business decisions via market segmentation and predictive analytics. This information is used by businesses for direct marketing, site selection, and customer relationship management. Marketing provides services in order to satisfy customers. With that in mind, the productive system is considered from its beginning at the production level, to the end of the cycle at the consumer. Customer analytics plays an important role in the prediction of customer behavior.
 
+This repository presents a comprehensive guide on conducting customer predictive analysis using machine learning techniques with Dataiku. Customer predictive analysis is a crucial task for businesses aiming to anticipate customer behavior, enhance customer experience, and optimize marketing strategies. Leveraging the powerful capabilities of Dataiku, a leading AI and machine learning platform, this analysis provides insights into customer segmentation, churn prediction, lifetime value estimation, and recommendation systems.
+
 ![unsplash.jpg](/images/unsplash.jpg)
+
+## Overview
+The analysis begins with an overview of the dataset used, which typically comprises various customer-related attributes such as demographics, transaction history, browsing behavior, and engagement metrics. With Dataiku's intuitive interface, data preparation tasks such as cleaning, transformation, and feature engineering are streamlined, ensuring the dataset is well-prepared for modeling.
+
+## Modeling
+The modeling phase involves selecting appropriate machine learning algorithms based on the specific objectives of the analysis. Techniques such as classification, regression, clustering, and collaborative filtering are applied to build predictive models that can accurately forecast customer behavior. Dataiku's extensive library of machine learning algorithms and automated model training capabilities simplify this process, allowing for rapid experimentation and model iteration.
+
+## Evaluation and Interpretation
+Once the models are trained, they are evaluated using various performance metrics such as accuracy, precision, recall, and F1-score. Interpretability techniques such as feature importance analysis, SHAP values, and model visualization are employed to gain insights into the factors driving customer behavior predictions. This facilitates informed decision-making and strategy refinement for maximizing business outcomes.
 
 ## Retail
 Although until recently over 90% of retailers had limited visibility on their customers, with increasing investments in loyalty programs, customer tracking solutions and market research, this industry started increasing use of customer analytics in decisions ranging from product, promotion, price and distribution management.[citation needed] The most obvious use of customer analytics in retail today is the development of personalized communications and offers and/or different marketing programs by segment.[citation needed] Additional reasons set forth by Bain & Co. include: prioritizing product development efforts, designing distribution strategies and determining product pricing.[3] Demographic, lifestyle, preference, loyalty data, behavior, shopper value and predictive behavior data points are key to the success of customer analytics.
@@ -41,9 +52,10 @@ Since it does not really make sense to print this correlation plot for hundred o
 # Regression Analysis with both Continuous and Categorical Variable
 ![download.png](/images/sales-and-response.png)
 
-
 Been enjoying exploring this dataset for sure, and certainly it was fun doing it, stays safe everyone! 😊
 
+# Conclusion
+In conclusion, this repository serves as a practical guide for conducting customer predictive analysis with Dataiku, demonstrating the end-to-end process from data preparation to model deployment. By leveraging the combined power of machine learning and Dataiku's platform, businesses can gain actionable insights into customer behavior and drive sustainable growth and profitability.
 
 # Disclaimer
 And please remember, as this is only a weekend pet project, which I'm doing them for my personal interest only.
